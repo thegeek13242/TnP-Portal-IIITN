@@ -6,7 +6,7 @@
 
 	if ($username&&$password)
 	{
-		$connect = mysqli_connect("localhost","root","","placement",3306) or die("Couldn't Connect");
+		$connect = mysqli_connect("localhost","root","","placement") or die("Couldn't Connect");
 		//mysql_select_db("placement") or die("Cant find DB");
 
 		$query = $connect->query("SELECT * FROM slogin WHERE USN='$username'");

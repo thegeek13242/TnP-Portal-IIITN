@@ -87,16 +87,16 @@
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
                 <li>
-                  <a href="../../Homepage/index.php" >Home CUSAT-SOE</a>
+                  <a href="../placement/placement/Homepage/index.php" >Home IIITN</a>
                 </li>
                 <li>
-                  <a href="">Drives Homepage</a>
+                  <a href="../Drives/index.php">Drives Homepage</a>
                 </li>
                 <li>
                   <a href="#" class="active">Notifications</a>
                 </li>
                 <li>
-                  <a href="Changed Password.php">Change Password</a>
+                  <a href="ChangePassword.php">Change Password</a>
                 </li>
               </ul>
             </nav>
@@ -107,7 +107,7 @@
             <h1><center>Department Messages</center></h1>
           </div>
           <footer class="text-right">
-          		<p>Copyright &copy; 2018 CUSAT-SOE | Developed by
+          		<p>Copyright &copy; 2018 IIITN | Developed by
               <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine </a>
 			  </p>
           </footer>
