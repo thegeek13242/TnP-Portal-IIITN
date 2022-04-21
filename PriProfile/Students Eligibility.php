@@ -124,11 +124,9 @@
                 </div>
 				<div class="col-lg-6 col-md-6 form-group">
                   <label class="control-label templatemo-block">History of Backlogs</label>
-                  <select name="hob" class="form-control">
-                    <option value="Y/N">Y/N</option>
-                    <option value="1">Y</option>
-                    <option value="0">N</option>
-                  </select>
+                  <input name="hob" class="form-control">
+                   
+    </input>
                 </div>
 
 				<div class="col-lg-6 col-md-6 form-group">

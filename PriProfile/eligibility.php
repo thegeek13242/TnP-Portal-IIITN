@@ -135,7 +135,8 @@ $beaggregate= $_POST['beagg'];
 $backlogs = $_POST['curback'];
 $hisofbk = $_POST['hob'];
 $dety = $_POST['dy'];
-$sql = "SELECT * FROM basicdetails where Approve=1 and Branch='$branch' and SSLC>='$sslc' and `PU/Dip`>='$puaggregate' and BE>='$beaggregate' and Backlogs='$backlogs' and HofBacklogs='$hisofbk' and DetainYears='$dety'" ;
+$sql = "SELECT * FROM basicdetails" ;
+// $sql = "SELECT * FROM basicdetails where Approve=1 and Branch='$branch' and SSLC>='$sslc' and `PU/Dip`>='$puaggregate' and BE>='$beaggregate' and Backlogs='$backlogs' and HofBacklogs='$hisofbk' and DetainYears='$dety'" ;
  //run the query
 
  $sql1 = $connect->query($sql);

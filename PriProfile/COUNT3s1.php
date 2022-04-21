@@ -56,18 +56,19 @@
 				  </thead>
 			   </tr>			   
  <?php		
-mysql_connect('localhost','root','');
-mysql_select_db('details');
+$connect = mysqli_connect('localhost','root','','details');
+
 if(isset($_POST['s1']))
 { 
 $Sname = $_POST['sname'];
-$RESULT = mysql_query("SELECT count(*) FROM basicdetails WHERE  `Approve`='1' AND (`FirstName` LIKE '%$Sname%' or `LastName` LIKE '%$Sname%')");
-$data=mysql_fetch_assoc($RESULT);
+$RESULT =$connect->query("SELECT count(*) FROM basicdetails WHERE  `Approve`='1' AND (`FirstName` LIKE '%$Sname%' or `LastName` LIKE '%$Sname%')");
+$data=$RESULT->fetch_assoc();
+
 echo "<br><h3>Number of Students with Name '$Sname'&nbsp:&nbsp";
 echo $data['count(*)'];
 echo "</h3>"; 
-$sql = mysql_query("SELECT * FROM basicdetails WHERE `Approve`='1' AND (`FirstName` LIKE '%$Sname%' or `LastName` LIKE '%$Sname%')");
-while($row = mysql_fetch_assoc($sql))
+$sql =$connect->query("SELECT * FROM basicdetails WHERE `Approve`='1' AND (`FirstName` LIKE '%$Sname%' or `LastName` LIKE '%$Sname%')");
+while($row =$sql->fetch_assoc())
 {
 	            print "<tr>"; 	
     echo '<td>'.$row['FirstName'].'</td>';	

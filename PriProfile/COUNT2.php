@@ -41,8 +41,6 @@ while($row = $sql->fetch_assoc())
 	echo $row['Backlogs'];
 	print "<br></td><td>History of Backlogs:"; 
 	echo $row['HofBacklogs'];
-	print "<br></td><td>Detain Years:"; 
-	echo $row['DetainYears'];
 	print "<br></td><td>Other Details:";
 	echo $row['ODetails'];
 print "</td></tr><br><br><br>"; 

@@ -57,18 +57,18 @@
 				  </thead>
 			   </tr>			   
  <?php		
-mysql_connect('localhost','root','');
-mysql_select_db('details');
+$connect = mysqli_connect('localhost','root','','details');
+
 if(isset($_POST['s4']))
 { 
 $Cbranch = $_POST['cbranch'];
-$RESULT = mysql_query("SELECT count(*) FROM basicdetails WHERE `Approve`='1' AND Branch='$Cbranch'");
-$data = mysql_fetch_assoc($RESULT);
+$RESULT = $connect->query("SELECT count(*) FROM basicdetails WHERE `Approve`='1' AND Branch='$Cbranch'");
+$data=$RESULT->fetch_assoc();
 echo "<br><h3>Students in '$Cbranch' Branch&nbsp:&nbsp";
 echo $data['count(*)'];
 echo "</h3>"; 
-$sql = mysql_query("SELECT * FROM basicdetails WHERE `Approve`='1' AND Branch='$Cbranch' ORDER BY Sem");
-while($row = mysql_fetch_assoc($sql))
+$sql = $connect->query("SELECT * FROM basicdetails WHERE `Approve`='1' AND Branch='$Cbranch' ORDER BY Sem");
+while($row =$sql->fetch_assoc())
 {
 	            print "<tr>"; 	
 	echo '<td>'.$row['Branch'].'</td>';			

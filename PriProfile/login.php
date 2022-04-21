@@ -239,6 +239,6 @@ echo "</h3>";
     <script src="https://www.google.com/jsapi"></script> <!-- Google Chart -->
 
     <script type="text/javascript" src="js/templatemo-script.js"></script>      <!-- Templatemo Script -->
-
+    
   </body>
 </html>

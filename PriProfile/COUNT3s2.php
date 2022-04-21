@@ -35,16 +35,69 @@
   </head>
   <body>
   <div class="bg">
-   <div class="templatemo-content-container">
-  <div class="templatemo-content-widget no-padding">
+  <div class="templatemo-content-container">
+          <div class="templatemo-content-widget no-padding">
+            <div class="panel panel-default table-responsive">
+			<table class="table table-striped table-bordered templatemo-user-table">
+                <thead>
+                  <tr>            
+                    <td><a class="white-text templatemo-sort-by">First Name </a></td>
+                    <td><a  class="white-text templatemo-sort-by">Last Name </a></td>
+                    <td><a  class="white-text templatemo-sort-by">USN </a></td>
+                    <td><a  class="white-text templatemo-sort-by">Mobile </a></td>
+					   <td><a  class="white-text templatemo-sort-by">Email </a></td>
+                       <td><a  class="white-text templatemo-sort-by">DOB</a></td>
+   <td><a  class="white-text templatemo-sort-by">Sem </a></td>               
+   <td><a  class="white-text templatemo-sort-by">Branch </a></td>
+   <td><a  class="white-text templatemo-sort-by">SSLC </a></td>
+   <td><a  class="white-text templatemo-sort-by">PU/Dip </a></td>
+			      <td><a  class="white-text templatemo-sort-by">BE </a></td>
+			      <td><a  class="white-text templatemo-sort-by">Backlogs </a></td>
+				     <td><a class="white-text templatemo-sort-by">History Of Backlogs </a></td>
+				     <td><a  class="white-text templatemo-sort-by">Detain Years </a></td> 
+				  </thead>
+			   </tr>
 <?php
-mysql_connect('localhost','root','');
-mysql_select_db('details');
+$connect = mysqli_connect('localhost','root','','details');
+
+
 if(isset($_POST['s2']))
 { 
 $Susn = $_POST['susn'];
-$RESULT = mysql_query("SELECT * FROM basicdetails WHERE USN='$Susn'");
-$row = mysql_fetch_assoc($RESULT);
+$RESULT =$connect->query("SELECT * FROM basicdetails WHERE USN='$Susn'");
+$data=$RESULT->fetch_assoc();
+
+echo "<br><h3>Student with BT number '$Susn'&nbsp:&nbsp";
+echo "</h3>"; 
+$sql =$connect->query("SELECT * FROM basicdetails WHERE USN='$Susn'");
+while($row =$sql->fetch_assoc())
+{
+	            print "<tr>"; 	
+    echo '<td>'.$row['FirstName'].'</td>';	
+	echo '<td>'.$row['LastName'].'</td>';		
+	echo '<td>'.$row['USN'].'</td>';	
+	echo '<td>'.$row['Mobile'].'</td>';	
+    echo '<td>'.$row['Email'].'</td>';		
+	echo '<td>'.$row['DOB'].'</td>';	
+	echo '<td>'.$row['Sem'].'</td>';	 
+	echo '<td>'.$row['Branch'].'</td>';		
+	echo '<td>'.$row['SSLC'].'</td>';	
+	echo '<td>'.$row['PU/Dip'].'</td>';	
+	echo '<td>'.$row['BE'].'</td>';	
+	echo '<td>'.$row['Backlogs'].'</td>';	
+	echo '<td>'.$row['HofBacklogs'].'</td>';	
+	echo '<td>'.$row['DetainYears'].'</td>';
+print "</tr>"; 
+}
+}
+?>
+     </tbody>
+              </table>  
+			  </div>
+			  </div>
+			  </div>
+
+<!-- $row = $data=$RESULT->fetch_assoc();
 echo "<br><h3>Details of Student '$Susn'&nbsp:&nbsp";
 echo "</h3>";
             print "<center><tr>"; 
@@ -78,7 +131,7 @@ echo "</h3>";
 	echo $row['DetainYears'];
 print "</td></tr></center>"; 
 }
-?>
+?> -->
 <footer class="text-right">
             <p>Copyright &copy; 2001-2015 CIT-PMS
             |  Developed by <a href="http://znumerique.azurewebsites.net" target="_parent">ZNumerique Technologies</a></p>
