@@ -83,7 +83,7 @@ NH4, Heruralt="Profile Photo" class="img-responsive">
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-                  <li><a href="../../placement/Homepage/indes.php">Home CUSAT-SOE</a></li>
+                  <li><a href="../../TnP-Portal-IIITN/Homepage/indes.php">Home CUSAT-SOE</a></li>
                 <li><a href="">Drives Home</a></li>
                  <li><a href="Notif.php">Notification</a></li>
                 <li><a href="Change Password.php">Change Password</a></li>
@@ -116,11 +116,11 @@ NH4, Heruralt="Profile Photo" class="img-responsive">
               </div>
 
 
-<center><label class="control-label" for="inputNote"><center><h2>OR</h2></center> <br/> <br/>To Upload an Image Click the Link below:</label><br/>
+<!-- <center><label class="control-label" for="inputNote"><center><h2>OR</h2></center> <br/> <br/>T    o Upload an Image Click the Link below:</label><br/>
 			   <br/>
 			   <a href="upload.html" class="templatemo-blue-button">Post an Image</a></center>
             </form>
-          </div>
+          </div> -->
 
 
           <footer class="text-right">

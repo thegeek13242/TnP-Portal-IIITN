@@ -59,7 +59,7 @@
         <nav class="templatemo-left-nav">
         <ul>
             <li><a href="../login.php"><i class="fa fa-home fa-fw"></i>Dashboard</a></li> 
-            <li><a href="../Placement Drives.php" class="active"><i class="fa fa-home fa-fw"></i>Placement Drives</a></li>           
+            <li><a href="../TnP-Portal-IIITN Drives.php" class="active"><i class="fa fa-home fa-fw"></i>Placement Drives</a></li>           
             <li><a href="../manage-users.php"><i class="fa fa-users fa-fw"></i>View Students</a></li>
             <li><a href="../queries.php"><i class="fa fa-users fa-fw"></i>Queries</a></li>
             <li><a href="../Students Eligibility.php"><i class="fa fa-sliders fa-fw"></i>Students Eligibility Status</a></li>
@@ -73,7 +73,7 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-               <li><a href="../../../placement/Homepage/index.php">Home CIT-PMS</a></li>
+               <li><a href="../../../TnP-Portal-IIITN/Homepage/index.php">Home CIT-PMS</a></li>
                 <li><a href="../../../Drives/index.php">Drives Home</a></li>
                 <li><a href="../Notif.php">Notifications</a></li>
                 <li><a href="../Change Password.php">Change Password</a></li>

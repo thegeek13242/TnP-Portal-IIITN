@@ -39,7 +39,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<span class="menu"><img src="images/menu.png" alt=""></span>
 					<ul class="nav1">
 						<li class="hvr-sweep-to-bottom">
-								<a href="../placement/Homepage/index.php">CUSAT-SOE<i>Goto Placement Homepage</i></a>
+								<a href="../TnP-Portal-IIITN/Homepage/index.php">CUSAT-SOE<i>Goto Placement Homepage</i></a>
 							</li>
 						<li class="hvr-sweep-to-bottom">
 								<a href="index.php">Home<i>Get the Overview of the Site</i></a>
@@ -172,7 +172,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 footer-right  wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 					<h6 style="color: white">Cochin University Of Science And  Technology</h6>
 					<h4>
-						<a href="../placement/Homepage/index.php" style="color: white">Placement Management System</a>
+						<a href="../TnP-Portal-IIITN/Homepage/index.php" style="color: white">Placement Management System</a>
 					</h4>
 					<p></p>
 				</div>

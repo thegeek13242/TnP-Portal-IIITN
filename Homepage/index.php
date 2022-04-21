@@ -14,7 +14,7 @@
         <!-- Bootstrap Core CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
         <!-- Footer -->
-        <!-- <link type="text/css" rel="stylesheet" href="/placement/placement/Homepage/css/Navbar.css"> -->
+        <!-- <link type="text/css" rel="stylesheet" href="/TnP-Portal-IIITN/TnP-Portal-IIITN/Homepage/css/Navbar.css"> -->
         <!-- Custom Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
         rel='stylesheet' type='text/css'>
@@ -111,7 +111,7 @@
 					<h3>NAVIGATION</h3>
 					<ul>
 						<li>
-							<a href="../placement/placement/Homepage/index.php">Home</a>
+							<a href="../TnP-Portal-IIITN/TnP-Portal-IIITN/Homepage/index.php">Home</a>
 						</li>
 						<li>
 							<a href="../SProfile/index.php">Student Login</a>

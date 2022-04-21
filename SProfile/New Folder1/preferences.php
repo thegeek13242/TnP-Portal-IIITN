@@ -87,7 +87,7 @@
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
                 <li>
-                  <a href="../../placement/Homepage/index.html" >Home CIT-PMS</a>
+                  <a href="../../TnP-Portal-IIITN/Homepage/index.html" >Home CIT-PMS</a>
                 </li>
                 <li>
                   <a href="">Drives Homepage</a>

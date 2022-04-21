@@ -74,7 +74,7 @@
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
                    <li>
-                  <a href="../../placement/Homepage/index.php">Home CUSAT-SOE</a>
+                  <a href="../../TnP-Portal-IIITN/Homepage/index.php">Home CUSAT-SOE</a>
                 </li>
                 <li>
                   <a href="../../Drives/index.php">Drives Homepage</a>

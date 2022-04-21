@@ -86,7 +86,7 @@
 					<h3>NAVIGATION</h3>
 					<ul>
 						<li>
-							<a href="../placement/placement/Homepage/index.php">Home</a>
+							<a href="../TnP-Portal-IIITN/TnP-Portal-IIITN/Homepage/index.php">Home</a>
 						</li>
 						<li>
 							<a href="../Profilers/SProfile/index.php">Student Login</a>

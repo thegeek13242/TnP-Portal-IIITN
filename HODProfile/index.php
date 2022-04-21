@@ -19,7 +19,7 @@
 	    <link href="css/bootstrap.min.css" rel="stylesheet">
 	    <link href="css/templatemo-style.css" rel="stylesheet">
         <!-- Footer -->
-        <link type="text/css" rel="stylesheet" href="../../placement/Homepage/css/style.css">
+        <link type="text/css" rel="stylesheet" href="../../TnP-Portal-IIITN/Homepage/css/style.css">
 
 	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -82,7 +82,7 @@
 					<h3>NAVIGATION</h3>
 					<ul>
 						<li>
-							<a href="../placement/Homepage/index.php">Home</a>
+							<a href="../TnP-Portal-IIITN/Homepage/index.php">Home</a>
 						</li>
 						<li>
 							<a href="../SProfile/index.php">Student Login</a>
