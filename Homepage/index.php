@@ -12,9 +12,9 @@
         <link rel="icon" href="favicon.ico" type="image/icon">
         <title>IIITN Placement Portal</title>
         <!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> -->
         <!-- Footer -->
-        <!-- <link type="text/css" rel="stylesheet" href="/TnP-Portal-IIITN/TnP-Portal-IIITN/Homepage/css/Navbar.css"> -->
+        <link type="text/css" rel="stylesheet" href="css/Navbar.css">
         <!-- Custom Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
         rel='stylesheet' type='text/css'>
@@ -34,20 +34,20 @@
     </head>
 
     <body id="page-top">
-	<!-- <div className="parent-container">
-      <div className="navbar-container">
-        <nav className="navbar">
-          <div className="nav-logo">
-            <div className="iiitn-logo">
+	<div class="parent-container">
+      <div class="navbar-container">
+        <nav class="navbar">
+          <div class="nav-logo">
+            <div class="iiitn-logo">
               <Link to="/">
-                <img src="/Assets/images/newLogo.png" alt="iiitn-logo" />
+                <img src="/TnP-Portal-IIITN/Homepage/images/newLogo.png" alt="iiitn-logo" />
               </Link>
             </div>
-            <div className="nav-title">
-              <div className="logo-text">
+            <div class="nav-title">
+              <div class="logo-text">
                 <h1>Indian Institute of Information Technology, Nagpur</h1>
               </div>
-              <div className="tagline">
+              <div class="tagline">
                 <h2>
                   An Institution of National Importance By An Act of Parliament
                 </h2>
@@ -57,43 +57,9 @@
           </div>
         </nav>
       </div>
-      <hr className="nav-divider" />
-    </div> -->
-         <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="background:black">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-					
-                    <a class="navbar-brand page-scroll" href="http://www.cusat.ac.in">INDIAN INSTITUTE OF INFORMATION TECHNOLOGY ,NAGPUR</a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a class="page-scroll" href="../SProfile/index.php">Student Login</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="../HODProfile/index.php">HOD Login</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="../PProfile/index.php">Placement Login</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="../PriProfile/index.php">Administrative Login</a>
-                        </li>
-                    </ul>
-
-            </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container-fluid -->
-        </nav> 
+    </div>
+    <hr class="nav-divider" />
+         
         <header>
             <div class="header-content">
                 <div class="header-content-inner">
