@@ -167,58 +167,46 @@
               </div>
             </div>
             <div class="col-1">
-              <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
-                <i class="fa fa-times"></i>
-                <div class="panel-heading templatemo-position-relative">
-                  <h2 class="text-uppercase">Lately Placed Students</h2>
-                </div>
-                <div class="table-responsive">
-                  <table class="table table-striped table-bordered">
-                    <thead>
-                      <tr>
-                        <td>No.</td>
-                        <td>First Name</td>
-                        <td>Last Name</td>
-                        <td>USN</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1.</td>
-                        <td>John</td>
-                        <td>Smith</td>
-                        <td>@jS</td>
-                      </tr>
-                      <tr>
-                        <td>2.</td>
-                        <td>Bill</td>
-                        <td>Jones</td>
-                        <td>@bJ</td>
-                      </tr>
-                      <tr>
-                        <td>3.</td>
-                        <td>Mary</td>
-                        <td>James</td>
-                        <td>@mJ</td>
-                      </tr>
-                      <tr>
-                        <td>4.</td>
-                        <td>Steve</td>
-                        <td>Bride</td>
-                        <td>@sB</td>
-                      </tr>
-                      <tr>
-                        <td>5.</td>
-                        <td>Paul</td>
-                        <td>Richard</td>
-                        <td>@pR</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+            <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
+              <i class="fa fa-times"></i>
+              <div class="panel-heading templatemo-position-relative">
+                <h2 class="text-uppercase">Top Placed Students</h2>
+              </div>
+              <div class="templatemo-content-container">
+          <div class="templatemo-content-widget no-padding">
+            <div class="panel panel-default table-responsive">
+			<table class="table table-striped table-bordered templatemo-user-table">
+                <thead>
+                  <tr>            
+                    <td><a class="white-text templatemo-sort-by">Name</a></td>
+                    <td><a  class="white-text templatemo-sort-by">Branch</a></td>
+                    <td><a  class="white-text templatemo-sort-by">Batch</a></td>
+                    <td><a  class="white-text templatemo-sort-by">Company</a></td>
+					          <td><a  class="white-text templatemo-sort-by">CTC</a> </td>
+				  </thead>
+			   </tr>
+              <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                  <?php
+                  $connect = mysqli_connect('localhost', 'root', '', 'placement');
+                  //select rows of students with top 5 salaries
+                  $sql = $connect->query("SELECT * FROM presult ORDER BY cast(lpa as int) DESC LIMIT 5");
+                  while ($row = $sql->fetch_assoc()) {
+                    print "<tr>";
+                    echo '<td>' . $row['name'] . '</td>';
+                    echo '<td>' . $row['branch'] . '</td>';
+                    echo '<td>' . $row['year'] . '</td>';
+                    echo '<td>' . $row['company'] . '</td>';
+                    echo '<td>' . $row['lpa'] . '</td>';
+                    print "</tr>";
+                  }
+                  ?>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
+        </div>
           <!-- Second row ends -->
           <footer class="text-right">
             		<p>Copyright &copy; 2018 CUSAT-SOE | Developed by

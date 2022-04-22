@@ -81,10 +81,10 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-                  <li><a href="../../TnP-Portal-IIITN/Homepage/indes.php">Home CIT-PMS</a></li>
+                  <li><a href="../../TnP-Portal-IIITN/Homepage/index.php">Home CIT-PMS</a></li>
                 <li><a href="">Drives Home</a></li>
                 <li><a href="Notif.php">Notification</a></li>
-                <li><a href="Change Password.php">Change Password</a></li>
+                <li><a href="ChangePassword.php">Change Password</a></li>
               </ul>
             </nav>
           </div>
@@ -94,7 +94,18 @@
             
 			<center><h2 class="margin-bottom-10">Read Message</h2>
             <p>Notifications from Placement Department and Principal</p></center>
-            
+            <?php
+            $connect = mysqli_connect("localhost", "root", "", "details");
+            $query = "SELECT * FROM `notifs`";
+            $result = mysqli_query($connect, $query);
+            while($row = mysqli_fetch_array($result))
+            {
+              echo '<h1>'.$row['subject'].'</h1>';
+              echo '<h3>'.$row['date'].'</h3>';
+              echo '<p>'.$row['message'].'</p>';
+              echo '<hr>';
+            }
+            ?>
               
           </div>
           <footer class="text-right">

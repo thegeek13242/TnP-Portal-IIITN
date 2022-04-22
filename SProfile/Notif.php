@@ -105,7 +105,20 @@
         <div class="templatemo-content-container">
           <div class="templatemo-content-widget white-bg">
             <h1><center>Department Messages</center></h1>
-          </div>
+         <hr>
+          <?php
+            $connect = mysqli_connect("localhost", "root", "", "details");
+            $query = "SELECT * FROM `notifs`";
+            $result = mysqli_query($connect, $query);
+            while($row = mysqli_fetch_array($result))
+            {
+              echo '<h1>'.$row['subject'].'</h1>';
+              echo '<h3>'.$row['date'].'</h3>';
+              echo '<p>'.$row['message'].'</p>';
+              echo '<hr>';
+            }
+            ?>
+             </div>
           <footer class="text-right">
           		<p>Copyright &copy; 2018 IIITN | Developed by
               <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine </a>

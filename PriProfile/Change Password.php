@@ -83,7 +83,7 @@
                   <a href="Notif.php">Notification</a>
                 </li>
                 <li>
-                  <a href="Change Password.php" class="active">Change Password</a>
+                  <a href="ChangePassword.php" class="active">Change Password</a>
                   </li>
               </ul>
             </nav>

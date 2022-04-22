@@ -56,6 +56,7 @@ include 'index1.php';
 				</div>
 			</nav>
 		</div>
+
 	</div>
 	<hr class="nav-divider" />
 
