@@ -93,42 +93,26 @@
           <div class="templatemo-content-widget white-bg">
             <h2 class="margin-bottom-10">Preferences</h2>
             <p>Update your Details here:</p>
-            <form action="index.php" class="templatemo-login-form" method="post" enctype="multipart/form-data">
+            <form action="pref.php" class="templatemo-login-form" method="post" enctype="multipart/form-data">
               <div class="row form-group">
                 <div class="col-lg-6 col-md-6 form-group">                  
                     <label for="inputFirstName">First Name</label>
-                    <input type="text" class="form-control" id="inputFirstName" placeholder="John">                  
+                    <input type="text" class="form-control" id="inputFirstName" name="Fname" placeholder="John">                  
                 </div>
                 <div class="col-lg-6 col-md-6 form-group">                  
                     <label for="inputLastName">Last Name</label>
-                    <input type="text" class="form-control" id="inputLastName" placeholder="Smith">                  
+                    <input type="text" class="form-control" id="inputLastName" name="Lname" placeholder="Smith">                  
                 </div> 
               </div>
               <div class="row form-group">
                 <div class="col-lg-6 col-md-6 form-group">                  
                     <label for="inputUsername">Username</label>
-                    <input type="text" class="form-control" id="inputUsername" placeholder="Admin">                  
+                    <input type="text" class="form-control" id="inputUsername" name="USN" placeholder="BRANCH123">                  
                 </div>
                 <div class="col-lg-6 col-md-6 form-group">                  
                     <label for="inputEmail">Email</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="admin@company.com">                  
+                    <input type="email" class="form-control" id="inputEmail" name="Email" placeholder="admin@company.com">                  
                 </div> 
-              </div>
-              
-              <div class="row form-group">
-                <div class="col-lg-12 form-group">                   
-                    <label class="control-label" for="inputNote">Note</label>
-                    <textarea class="form-control" id="inputNote" rows="3"></textarea>
-                </div>
-              </div>
-              
-              <div class="row form-group">
-                <div class="col-lg-12">
-                  <label class="control-label templatemo-block">File Input</label> 
-                  <!-- <input type="file" name="fileToUpload" id="fileToUpload" class="margin-bottom-10"> -->
-                  <input type="file" name="fileToUpload" id="fileToUpload" class="filestyle" data-buttonName="btn-primary" data-buttonBefore="true" data-icon="false">
-                  <p>Maximum upload size is 5 MB.</p>                  
-                </div>
               </div>
               <div class="form-group text-right">
                 <button type="submit" class="templatemo-blue-button">Update</button>

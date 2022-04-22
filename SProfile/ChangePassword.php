@@ -39,7 +39,7 @@
         <header class="templatemo-site-header">
           <div class="square"></div>
 <?php
-		  $Welcome = "Ahoj!!";
+		  $Welcome = "Ahoy!!";
           echo "<h1>" . $Welcome . "<br>". $_SESSION['username']. "</h1>";
 		  ?>
         </header>
@@ -81,10 +81,10 @@
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
                 <li>
-                  <a href="../../TnP-Portal-IIITN/Homepage/index.php">Home CUSAT-SOE</a>
+                  <a href="../../TnP-Portal-IIITN/Homepage/index.php">Home IIITN</a>
                 </li>
                 <li>
-                  <a href="../../Drives/index.php">Drives Homepage</a>
+                  <a href="../Drives/index.php">Drives Homepage</a>
                 </li>
                 <li>
                   <a href="Notif.php">Notifications</a>

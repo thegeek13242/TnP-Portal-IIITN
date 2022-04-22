@@ -118,7 +118,7 @@
                 </div>
 
 				<div class="col-lg-6 col-md-6 form-group">
-                  <label for="usn">USN</label>
+                  <label for="usn">Enrolment No.</label>
                   <input type="text" name="USN" class="form-control" id="usn" placeholder="1CG12IS000" >
                 </div>
 
@@ -170,7 +170,7 @@
                   <input type="text" name="Percentage" class="form-control" id="sslc" placeholder="">
                 </div>
 				<div class="col-lg-6 col-md-6 form-group">
-                  <label for="Pu">12th/Diploma Aggregate</label>
+                  <label for="Pu">12th Percentage</label>
                   <input type="text" name="Puagg" class="form-control" id="Pu" placeholder="">
                 </div>
 				<div class="col-lg-6 col-md-6 form-group">
@@ -214,18 +214,10 @@
 
               </div>
               </div>
-              <div class="row form-group">
-                <div class="col-lg-12">
-                  <label class="control-label templatemo-block">Upload your Profile Pic</label>
-                  <!-- <input type="file" name="fileToUpload" id="fileToUpload" class="margin-bottom-10"> -->
-                  <input type="file" name="fileToUpload" id="fileToUpload" class="filestyle" data-buttonName="btn-primary" data-buttonBefore="true"
-                  data-icon="false">
-                  <p>Maximum upload size is 5 MB.</p>
-                </div>
-              </div>
+              
               <div class="form-group text-right">
 
-				<button type="submit"  name="submit" class="templatemo-blue-button">add</button>
+				<!-- <button type="submit"  name="submit" class="templatemo-blue-button">add</button> -->
 				<button type="submit"  name="update" class="templatemo-blue-button">update</button>
                 <button type="reset" class="templatemo-white-button">Reset</button>
               </div>

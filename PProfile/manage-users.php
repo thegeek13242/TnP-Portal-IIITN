@@ -91,50 +91,47 @@
         </div>
 
         <div class="templatemo-content-container">
-
           <div class="templatemo-content-widget no-padding">
-		  	<a href="bgo.php" class="templatemo-blue-button">View Branchwise</a>
             <div class="panel panel-default table-responsive">
-
-
-			  <table class="table table-striped table-bordered templatemo-user-table">
+              <table class="table table-striped table-bordered templatemo-user-table">
                 <thead>
                   <tr>
-				  <td><a   class="white-text templatemo-sort-by">Approval Date</a></td>
-                    <td><a   class="white-text templatemo-sort-by">First Name</a></td>
-                    <td><a   class="white-text templatemo-sort-by">Last Name </a></td>
-                    <td><a  class="white-text templatemo-sort-by">USN </a></td>
-                    <td><a class="white-text templatemo-sort-by">Mobile  </a></td>
-					   <td><a  class="white-text templatemo-sort-by">Email </a></td>
-                       <td><a class="white-text templatemo-sort-by">DOB  </a></td>
-   <td><a   class="white-text templatemo-sort-by">Sem </a></td>
-   <td><a class="white-text templatemo-sort-by">Branch </a></td>
-   <td><a  class="white-text templatemo-sort-by">SSLC </td>
-   <td><a  class="white-text templatemo-sort-by">PU/Dip </a></td>
-			      <td><a  class="white-text templatemo-sort-by">BE </a></td>
-			      <td><a class="white-text templatemo-sort-by">Backlogs </span></a></td>
-				     <td><a   class="white-text templatemo-sort-by">History Of Backlogs </span></a></td>
-				     <td><a  class="white-text templatemo-sort-by">Detain Years </a></td>
 
+
+
+					<td><a  class="white-text templatemo-sort-by">First Name </a></td>
+                    <td><a class="white-text templatemo-sort-by">Last Name </a></td>
+                    <td><a class="white-text templatemo-sort-by">USN</a></td>
+                    <td><a  class="white-text templatemo-sort-by">Mobile</a></td>
+					   <td><a class="white-text templatemo-sort-by">Email</a></td>
+                       <td><a  class="white-text templatemo-sort-by">Dob </a></td>
+   <td><a class="white-text templatemo-sort-by">Current Sem</a></td>
+   <td><a  class="white-text templatemo-sort-by">Branch</a></td>
+   <td><a  class="white-text templatemo-sort-by">SSLC Percentage </a></td>
+   <td><a class="white-text templatemo-sort-by">PU Percentage</a></td>
+			      <td><a  class="white-text templatemo-sort-by">BE Aggregate</a></td>
+			      <td><a  class="white-text templatemo-sort-by">Current Backlogs </a></td>
+				     <td><a  class="white-text templatemo-sort-by">History of Backlogs </a></td>
+				     <td><a  class="white-text templatemo-sort-by">Detain Years</a></td>
 				  </thead>
 			   </tr>
 
 			   <?php
-
+// $p = $_SESSION['branch'];
+// echo '<h2>'.$p.' Students</h2>';
 $num_rec_per_page=15;
-$connect = mysqli_connect('localhost','root','','details');
+$conn = mysqli_connect('localhost','root','',"details");
 // mysql_select_db('details');
 if (isset($_GET["page"])) { $page  = $_GET["page"]; } else { $page=1; };
 $start_from = ($page-1) * $num_rec_per_page;
-$sql = "SELECT * FROM basicdetails where Approve='1' ORDER BY ApprovalDate DESC LIMIT $start_from, $num_rec_per_page";
-$rs_result = $connect->query ($sql); //run the query
-?>
-<?php
+$sql = "SELECT * FROM basicdetails";
+$rs_result = $conn->query($sql); //run the query
+// $rs_result = $sql->query();
 while ($row = $rs_result->fetch_assoc())
 {
 
             print "<tr>";
-print "<td>" . $row['ApprovalDate'] . "</td>";
+
 print "<td>" . $row['FirstName'] . "</td>";
 print "<td>" . $row['LastName'] . "</td>";
 print "<td>" . $row['USN'] . "</td>";
@@ -149,8 +146,6 @@ print "<td>" . $row['BE'] . "</td>";
 print "<td>" . $row['Backlogs'] . "</td>";
 print "<td>" . $row['HofBacklogs'] . "</td>";
 print "<td>" . $row['DetainYears'] . "</td>";
-
-
 
 
 print "</tr>";

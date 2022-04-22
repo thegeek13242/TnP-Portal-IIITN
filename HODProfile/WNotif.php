@@ -114,6 +114,7 @@ NH4, Heruralt="Profile Photo" class="img-responsive">
                 <button type="submit" class="templatemo-blue-button">POST</button>
                 <button type="reset" class="templatemo-white-button">Clear</button>
               </div>
+            </form>
 
 
 <!-- <center><label class="control-label" for="inputNote"><center><h2>OR</h2></center> <br/> <br/>T    o Upload an Image Click the Link below:</label><br/>
