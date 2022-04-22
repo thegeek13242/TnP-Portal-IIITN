@@ -11,10 +11,9 @@
   <link rel="shortcut icon" href="/TnP-Portal-IIITN/Homepage/images/newLogo.png" type="image/icon">
   <link rel="icon" href="/TnP-Portal-IIITN/Homepage/images/newLogo.png" type="image/icon">
   <title>IIITN Placement Portal</title>
-  <!-- Bootstrap Core CSS -->
-  <!-- <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> -->
   <!-- Footer -->
   <link type="text/css" rel="stylesheet" href="css/Navbar.css">
+  <link type="text/css" rel="stylesheet" href="css/footer.css">
   <!-- Custom Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -37,9 +36,9 @@
       <nav class="navbar">
         <div class="nav-logo">
           <div class="iiitn-logo">
-            <Link to="/">
-            <img src="/TnP-Portal-IIITN/Homepage/images/newLogo.png" alt="iiitn-logo" />
-            </Link>
+            <a href="/TnP-Portal-IIITN/Homepage/">
+              <img src="/TnP-Portal-IIITN/Homepage/images/newLogo.png" alt="iiitn-logo" />
+            </a>
           </div>
           <div class="nav-title">
             <div class="logo-text">
@@ -89,68 +88,57 @@
         <script src="/TnP-Portal-IIITN/particles.js-master/demo/js/app.js"></script>
         <h1>Placement Management System</h1>
         <hr>
-        <p>We are here to Build your Skills and Career with our Driven Passion and Reality.</br>Click Below to Get Our Current Drive
-          Details</p>
-        <a href="../Drives/index.php" class="btn btn-primary btn-xl page-scroll">Current Drives</a>
+        <a href="../Drives/index.php" class="btn btn-primary btn-xl page-scroll">Placement Statistics</a>
       </div>
     </div>
   </header>
-  <div class="footer">
+  <footer class="site-footer">
     <div class="container">
-      <div class="col-md-3 ftr_navi ftr">
-        <h3>NAVIGATION</h3>
-        <ul>
-          <li>
-            <a href="../TnP-Portal-IIITN/TnP-Portal-IIITN/Homepage/index.php">Home</a>
-          </li>
-          <li>
-            <a href="../SProfile/index.php">Student Login</a>
-          </li>
-          <li>
-            <a href="../PProfile/index.php">Placement Login</a>
-          </li>
-          <li>
-            <a href="../HODProfile/index.php">HOD Login</a>
-          </li>
-          <li>
-            <a href="../Priprofile/index.php">Administrative Login</a>
-          </li>
-        </ul>
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>Reach Us</h6>
+          <p class="text-justify">
+            Survey No. 140,141/1 <br>
+            behind Br. Sheshrao Wankhade Shetkari Sahkari Soot Girni,<br>
+            Village - Waranga, PO - Dongargaon(Butibori), Tahsil- Nagpur (Rural), <br>
+            District Nagpur, Maharashtra- 441108 <br>
+            Email: <a href="mailto:registrar@iiitn.ac.in">registrar@iiitn.ac.in</a><br>
+            Phone: <a href="tel:+919405215010">+91-9405215010</a>
+          </p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1863.0290353762057!2d79.02581562066392!3d20.950182979007785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0529518230f%3A0x45b76be0621cbb88!2sIIIT%20Nagpur!5e0!3m2!1sen!2sin!4v1650637248240!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <h6>Login</h6>
+          <ul class="footer-links">
+            <li><a href="/TnP-Portal-IIITN/SProfile/index.php">Student Login</a></li>
+            <li><a href="/TnP-Portal-IIITN/HODProfile/index.php">HOD Login</a></li>
+            <li><a href="/TnP-Portal-IIITN/PProfile/index.php">TnP Login</a></li>
+            <li><a href="/TnP-Portal-IIITN/PriProfile/index.php">Admin Login</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#">Placement Statistics</a></li>
+            <li><a href="#">Past Recruiters</a></li>
+            <li><a href="https://iiitn.ac.in/">College Homepage</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="col-md-3 ftr_navi ftr">
-        <h3>MEMBERS</h3>
-        <ul>
-          <li>
-            <a href="#">Customer Support</a>
-          </li>
-          <li>
-            <a href="#">Placement Support</a>
-          </li>
-          <li>
-            <a href="#">Faculty Support</a>
-          </li>
-          <li>
-            <a href="#">Registered Companies</a>
-          </li>
-          <li>
-            <a href="#">Training</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-3 get_in_touch ftr">
-        <h3>GET IN TOUCH</h3>
-        <p>University Hills</p>
-        <p>Kalamessery, Kochi, India</p>
-        <p>83019-79790/221456</p>
-        <a href="mailto:soumen1696@gmail.com">Soumen1696@gmail.com</a>
-      </div>
-      <div class="col-md-3 ftr-logo">
-        <p>Copyright &copy; 2018 CUSAT-SOE | Developed by
-          <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine Technologies</a>
-      </div>
-      <div class="clearfix"></div>
+
+      <hr>
     </div>
-  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
+            <a href="https://iiitn.ac.in/">IIIT Nagpur</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
 </body>
 
 </html>
