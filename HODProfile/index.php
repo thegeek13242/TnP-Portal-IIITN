@@ -22,6 +22,7 @@ include 'index1.php';
 	<link type="text/css" rel="stylesheet" href="/TnP-Portal-IIITN/Homepage/css/Navbar.css">
 
 	<!-- Footer -->
+	<link type="text/css" rel="stylesheet" href="/TnP-Portal-IIITN/Homepage/css/footer.css">
 	<link type="text/css" rel="stylesheet" href="../../TnP-Portal-IIITN/Homepage/css/style.css">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -38,7 +39,7 @@ include 'index1.php';
 			<nav class="navbar">
 				<div class="nav-logo">
 					<div class="iiitn-logo">
-						<a herf="/TnP-Portal-IIITN/Homepage/">
+						<a href="/TnP-Portal-IIITN/Homepage/">
 							<img src="/TnP-Portal-IIITN/Homepage/images/newLogo.png" alt="iiitn-logo" />
 						</a>
 					</div>
@@ -127,62 +128,53 @@ include 'index1.php';
 		<p>Can't Access Account? <strong><a href="Forgot Password.php" class="blue-text">Reset Password</a></strong></p>
 	</div>
 	<!--Footer-->
-	<div class="footer">
+	<footer class="site-footer">
 		<div class="container">
-			<div class="col-md-3 ftr_navi ftr">
-				<h3>NAVIGATION</h3>
-				<ul>
-					<li>
-						<a href="../TnP-Portal-IIITN/Homepage/index.php">Home</a>
-					</li>
-					<li>
-						<a href="../SProfile/index.php">Student Login</a>
-					</li>
-					<li>
-						<a href="../PProfile/index.php">Placement Login</a>
-					</li>
-					<li>
-						<a href="../HODProfile/index.php">HOD Login</a>
-					</li>
-					<li>
-						<a href="../PriProfile/index.php">Principal Login</a>
-					</li>
-				</ul>
+			<div class="row">
+				<div class="col-sm-12 col-md-6">
+					<h6>Reach Us</h6>
+					<p class="text-justify">
+						Survey No. 140,141/1 <br>
+						behind Br. Sheshrao Wankhade Shetkari Sahkari Soot Girni,<br>
+						Village - Waranga, PO - Dongargaon(Butibori), Tahsil- Nagpur (Rural), <br>
+						District Nagpur, Maharashtra- 441108 <br>
+						Email: <a href="mailto:registrar@iiitn.ac.in">registrar@iiitn.ac.in</a><br>
+						Phone: <a href="tel:+919405215010">+91-9405215010</a>
+					</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1863.0290353762057!2d79.02581562066392!3d20.950182979007785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0529518230f%3A0x45b76be0621cbb88!2sIIIT%20Nagpur!5e0!3m2!1sen!2sin!4v1650637248240!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<h6>Login</h6>
+					<ul class="footer-links">
+						<li><a href="/TnP-Portal-IIITN/SProfile/index.php">Student Login</a></li>
+						<li><a href="/TnP-Portal-IIITN/HODProfile/index.php">HOD Login</a></li>
+						<li><a href="/TnP-Portal-IIITN/PProfile/index.php">TnP Login</a></li>
+						<li><a href="/TnP-Portal-IIITN/PriProfile/index.php">Admin Login</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<h6>Quick Links</h6>
+					<ul class="footer-links">
+						<li><a href="#">Placement Statistics</a></li>
+						<li><a href="#">Past Recruiters</a></li>
+						<li><a href="https://iiitn.ac.in/">College Homepage</a></li>
+					</ul>
+				</div>
 			</div>
-			<div class="col-md-3 ftr_navi ftr">
-				<h3>MEMBERS</h3>
-				<ul>
-					<li>
-						<a href="#">Customer Support</a>
-					</li>
-					<li>
-						<a href="#">Placement Support</a>
-					</li>
-					<li>
-						<a href="#">Faculty Support</a>
-					</li>
-					<li>
-						<a href="#">Registered Companies</a>
-					</li>
-					<li>
-						<a href="#">Training</a>
-					</li>
-				</ul>
-			</div>
-			<div class="col-md-3 get_in_touch ftr">
-				<h3>GET IN TOUCH</h3>
-				<!-- <p>NH4, Herur</p> -->
-				<p>South kalamessery,Kochi, India</p>
-				<p>08301-79790/223365</p>
-				<a href="mailto:soumen1696@gmail.com">soumen1696@gmail.com</a>
-			</div>
-			<div class="col-md-3 ftr-logo">
-				<p>Copyright &copy; 2018 CUSAT-SOE | Developed by
-					<a href="http://znumerique.azurewebsites.net" target="_parent">Hypermine</a>
+
+			<hr>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-6 col-xs-12">
+					<p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
+						<a href="https://iiitn.ac.in/">IIIT Nagpur</a>.
+					</p>
+				</div>
 			</div>
 		</div>
-
-	</div>
+		</div>
+	</footer>
 </body>
 
 </html>
