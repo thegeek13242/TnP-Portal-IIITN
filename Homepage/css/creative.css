@@ -178,7 +178,7 @@ header {
   min-height: auto;
   text-align: center;
   color: black;
-  /* background-image: url(../img/header.jpg); */
+  background-image: url(../images/home_pic.jpg);
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -191,7 +191,7 @@ header .header-content {
   width: 100%;
   padding: 100px 15px;
   text-align: center;
-  background-color: black;
+  text-shadow: 2px 2px 5px #414141;
 }
 .heading {
   position: absolute;
@@ -207,7 +207,11 @@ header .header-content .header-content-inner h1 {
 }
 
 #particles-js {
-  background: black;
+  background-image: url(../images/home_pic.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   height: 100vh;
 }
 

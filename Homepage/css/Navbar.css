@@ -51,6 +51,8 @@ hr.nav-divider {
 
 .navbar h1 {
   font-size: 3rem;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .navbar h2 {
@@ -90,6 +92,10 @@ hr.nav-divider {
   margin-left: 2rem;
   color: #cf5924;
   font-size: 0.75rem;
+}
+
+.tagline h2 {
+  margin-top: 0px !important;
 }
 
 .nav-menu {

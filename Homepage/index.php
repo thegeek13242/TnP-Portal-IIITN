@@ -37,9 +37,9 @@
       <nav class="navbar">
         <div class="nav-logo">
           <div class="iiitn-logo">
-            <Link to="/">
-            <img src="/TnP-Portal-IIITN/Homepage/images/newLogo.png" alt="iiitn-logo" />
-            </Link>
+            <a href="/TnP-Portal-IIITN/Homepage/">
+              <img src="/TnP-Portal-IIITN/Homepage/images/newLogo.png" alt="iiitn-logo" />
+            </a>
           </div>
           <div class="nav-title">
             <div class="logo-text">
