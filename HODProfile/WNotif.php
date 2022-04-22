@@ -83,7 +83,7 @@ NH4, Heruralt="Profile Photo" class="img-responsive">
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-                  <li><a href="../../TnP-Portal-IIITN/Homepage/indes.php">Home CUSAT-SOE</a></li>
+                  <li><a href="../../TnP-Portal-IIITN/Homepage/index.php">Home CUSAT-SOE</a></li>
                 <li><a href="">Drives Home</a></li>
                  <li><a href="Notif.php">Notification</a></li>
                 <li><a href="Change Password.php">Change Password</a></li>
@@ -99,13 +99,13 @@ NH4, Heruralt="Profile Photo" class="img-responsive">
               <div class="row form-group">
                 <div class="col-lg-12 form-group">
                     <label class="control-label" for="inputNote">Subject:</label>
-                    <textarea class="form-control" id="inputNote" rows="2"></textarea>
+                    <textarea class="form-control" id="inputNote" name="note_subject" rows="2"></textarea>
                 </div>
               </div>
               <div class="row form-group">
                 <div class="col-lg-12 form-group">
                     <label class="control-label" for="inputNote">Message:</label>
-                    <textarea class="form-control" id="inputNote" rows="5"></textarea>
+                    <textarea class="form-control" id="inputNote" name="note_message" rows="5"></textarea>
                 </div>
               </div>
 
