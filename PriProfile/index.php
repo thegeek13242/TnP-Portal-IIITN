@@ -59,7 +59,7 @@
 	        </form>
 		</div>
 		<div class="templatemo-content-widget templatemo-login-widget templatemo-register-widget white-bg">
-			<p>Can't Access Account? <strong><a href="Forgot Password.php" class="blue-text">Reset Password</a></strong></p>
+			<p>Can't Access Account? <strong><a href="ForgotPassword.php" class="blue-text">Reset Password</a></strong></p>
 		</div>
 			
 		

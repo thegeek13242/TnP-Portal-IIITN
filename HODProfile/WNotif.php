@@ -86,7 +86,7 @@ NH4, Heruralt="Profile Photo" class="img-responsive">
                   <li><a href="../../TnP-Portal-IIITN/Homepage/index.php">Home CUSAT-SOE</a></li>
                 <li><a href="">Drives Home</a></li>
                  <li><a href="Notif.php">Notification</a></li>
-                <li><a href="Change Password.php">Change Password</a></li>
+                <li><a href="ChangePassword.php">Change Password</a></li>
               </ul>
             </nav>
           </div>

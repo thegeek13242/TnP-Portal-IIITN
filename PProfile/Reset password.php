@@ -4,7 +4,7 @@ if(isset($_SESSION['reset']))
 {
 	
 } else
-  header("location: Forgot Password.php");
+  header("location: ForgotPassword.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">

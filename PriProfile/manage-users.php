@@ -84,7 +84,7 @@
                    <a href="Notif.php">Notification</a>
                 </li>
                 <li>
-                  <a href="Change Password.php">Change Password</a>
+                  <a href="ChangePassword.php">Change Password</a>
                   </li>
               </ul>
             </nav>

@@ -77,7 +77,7 @@
                <li><a href="../../TnP-Portal-IIITN/Homepage/index.php">Home CUSAT-SOE</a></li>
                 <li><a href="../../Drives/index.php">Drives Home</a></li>
                 <li><a href="Notif.php">Notifications</a></li>
-                <li><a href="Change Password.php" class="active">Change Password</a></li>
+                <li><a href="ChangePassword.php" class="active">Change Password</a></li>
               </ul>
             </nav>
           </div>
