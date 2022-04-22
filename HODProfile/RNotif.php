@@ -103,6 +103,7 @@
               echo '<h1>'.$row['subject'].'</h1>';
               echo '<h3>'.$row['date'].'</h3>';
               echo '<p>'.$row['message'].'</p>';
+              echo '<hr>';
             }
             ?>
               

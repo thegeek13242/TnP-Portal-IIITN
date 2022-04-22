@@ -115,12 +115,13 @@
 
 			   <?php
 $p = $_SESSION['department'];
+echo '<h2>'.$p.' Students</h2>';
 $num_rec_per_page=15;
 $conn = mysqli_connect('localhost','root','',"details");
 // mysql_select_db('details');
 if (isset($_GET["page"])) { $page  = $_GET["page"]; } else { $page=1; };
 $start_from = ($page-1) * $num_rec_per_page;
-$sql = "SELECT * FROM basicdetails WHERE Approve=0 and Branch='$p' LIMIT $start_from, $num_rec_per_page";
+$sql = "SELECT * FROM basicdetails WHERE Branch LIKE '$p' LIMIT $start_from, $num_rec_per_page";
 $rs_result = $conn->query($sql); //run the query
 // $rs_result = $sql->query();
 while ($row = $rs_result->fetch_assoc())
