@@ -99,7 +99,7 @@
 <?php
 $connect = mysqli_connect('localhost','root','','details');
 //mysql_select_db('details');
-$RESULT=$connect->query("SELECT DISTINCT count(CompanyName) from addpdrive where PVenue LIKE '%CIT%' AND YEAR(Date)=YEAR(NOW())");
+$RESULT=$connect->query("SELECT DISTINCT count(CompanyName) from addpdrive where PVenue LIKE '%IIITN%' AND YEAR(Date)=YEAR(NOW())");
 $data=$RESULT->fetch_assoc();
 echo "<br><br><h3>Companies In Our Campus In This Year&nbsp:&nbsp";
 echo $data['count(CompanyName)'];
