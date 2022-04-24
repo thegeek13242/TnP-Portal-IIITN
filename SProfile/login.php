@@ -136,6 +136,7 @@ if ($_SESSION["username"]) {
                     <img class="media-object img-circle" src="images/sunset.jpg" alt="Sunset">
                   </a>
                 </div>
+
                 <div class="media-body">
                   <h2 class="media-heading text-uppercase">Latest Drive</h2>
                   <p>Click on and get the Latest Drive and Upcomming Drive Details</p>
@@ -143,7 +144,6 @@ if ($_SESSION["username"]) {
               </div>
             </div>
             <div class="templatemo-content-widget white-bg">
-
               <div class="media">
                 <div class="media-left">
                   <a href="#">
@@ -152,6 +152,7 @@ if ($_SESSION["username"]) {
                 </div>
                 <div class="media-body">
                   <h2 class="media-heading text-uppercase">Upcomming Events</h2>
+
                   <p>Brace yourself for the Events that will take ur breath away. Get Started and be a Part of IIIT Nagpur Family</p>
                 </div>
               </div>

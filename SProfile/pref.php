@@ -77,7 +77,7 @@ if($USN !=''||$email !='')
 	{
 
 	$sql = $connect->query("SELECT * FROM `details`.`basicdetails` WHERE `USN`='$USN'");
-	if($sql->num_rows == 1)
+	if($sql->num_rows)
 	{
 
 		if($query = $connect->query("UPDATE `details`.`basicdetails` SET `FirstName`='$fname', `LastName`='$lname', `Mobile`='$phno', `Email`='$email', `DOB`='$date', `Sem`='$cursem', `Branch`= '$branch', `SSLC`='$per', `PU/Dip`='$puagg', `BE`='$beaggregate', `Backlogs`='$back', `HofBacklogs`='$hisofbk', `DetainYears`='$detyear' ,`Approve`='0'

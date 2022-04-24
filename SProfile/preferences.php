@@ -149,7 +149,6 @@ if ($_SESSION["username"]) {
                 </select>
               </div>
 
-
               <div class="col-lg-6 col-md-6 form-group">
                 <label class="control-label templatemo-block">Branch of Study</label>
                 <select name="Branch" class="form-control">

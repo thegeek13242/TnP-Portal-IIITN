@@ -92,26 +92,26 @@
           <div class="templatemo-content-widget white-bg">
             <h2 class="margin-bottom-10">Write Messages</h2>
             <p>Department Notifications to Students</p>
-            <form action="upload.php" action="POST" enctype="multipart/form-data">
+            <form action="WN.php" method="POST">
               <div class="row form-group">
-                <div class="col-lg-12 form-group">                   
+                <div class="col-lg-12 form-group">
                     <label class="control-label" for="inputNote">Subject:</label>
-                    <textarea class="form-control" id="inputNote" rows="2" name="Subject"></textarea>
+                    <textarea class="form-control" id="inputNote" name="note_subject" rows="2"></textarea>
                 </div>
               </div>
               <div class="row form-group">
-                <div class="col-lg-12 form-group">                   
+                <div class="col-lg-12 form-group">
                     <label class="control-label" for="inputNote">Message:</label>
-                    <textarea class="form-control" id="inputNote" rows="5" name="Message"></textarea>
+                    <textarea class="form-control" id="inputNote" name="note_message" rows="5"></textarea>
                 </div>
               </div>
-			   
-             
+
+
               <div class="form-group text-right">
-			 
                 <button type="submit" class="templatemo-blue-button">POST</button>
                 <button type="reset" class="templatemo-white-button">Clear</button>
-              </div>  
+              </div>
+            </form> 
           <center><label class="control-label" for="inputNote"><center><h2>OR</h2></center> <br/> <br/>To Upload an Image Click the Link below:</label><br/>
 			   <br/>
 			   <a href="upload.html" class="templatemo-blue-button">Post an Image</a></center>	

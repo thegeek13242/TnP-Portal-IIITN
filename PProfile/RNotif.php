@@ -18,7 +18,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HOD - Preferences</title>
+    <title>Placement - Preferences</title>
     <meta name="description" content="">
     <meta name="author" content="templatemo">
     <!--
@@ -93,7 +93,18 @@
 
 			<center><h2 class="margin-bottom-10">Read Message</h2>
             <p>Notifications from Placement Department and Principal</p></center>
-
+            <?php
+            $connect = mysqli_connect("localhost", "root", "", "details");
+            $query = "SELECT * FROM `notifs`";
+            $result = mysqli_query($connect, $query);
+            while($row = mysqli_fetch_array($result))
+            {
+              echo '<h1>'.$row['subject'].'</h1>';
+              echo '<h3>'.$row['date'].'</h3>';
+              echo '<p>'.$row['message'].'</p>';
+              echo '<hr>';
+            }
+            ?>
 
           </div>
           <footer class="text-right">

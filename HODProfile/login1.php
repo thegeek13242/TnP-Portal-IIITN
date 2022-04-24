@@ -18,10 +18,9 @@
 		{
 			while($row = $query->fetch_assoc())
 			{
-				$dbbranch = $row['Branch'];
-				$dbusername = $row['Username'];
-				$dbpassword = $row['Password'];
-
+				$dbbranch = $row['branch'];
+				$dbusername = $row['username'];
+				$dbpassword = $row['password'];
 			}
 			if ($branch==$dbbranch&&$husername==$dbusername&&$password==$dbpassword)
 			{
