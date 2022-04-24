@@ -22,6 +22,7 @@ if ($_SESSION["username"]) {
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/templatemo-style.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="/TnP-Portal-IIITN/Homepage/css/Navbar.css">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -31,40 +32,59 @@ if ($_SESSION["username"]) {
 </head>
 
 <body>
+  <div class="parent-container">
+    <div class="navbar-container">
+      <nav class="navbar">
+        <div class="nav-logo">
+          <div class="iiitn-logo">
+            <a href="/TnP-Portal-IIITN/Homepage/">
+              <img src="/TnP-Portal-IIITN/Homepage/images/newLogo.png" alt="iiitn-logo" />
+            </a>
+          </div>
+          <div class="nav-title">
+            <div class="logo-text">
+              <h1>Indian Institute of Information Technology, Nagpur</h1>
+            </div>
+            <div class="tagline">
+              <h2>
+                An Institution of National Importance By An Act of Parliament
+              </h2>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+  </div>
+  <hr class="nav-divider" />
   <!-- Left column -->
   <div class="templatemo-flex-row">
-    <div class="templatemo-sidebar">
-      <header class="templatemo-site-header">
-        <div class="square"></div>
-        <?php
-        $Welcome = "Welcome";
-        echo "<h1>" . $Welcome . "<br>" . $_SESSION['username'] . "</h1>";
-        ?>
-      </header>
-      <div class="profile-photo-container">
-        <img src="images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">
-        <div class="profile-photo-overlay"></div>
-      </div>
-      <!-- Search box -->
-      <form class="templatemo-search-form" role="search">
-        <div class="input-group">
-          <button type="submit" class="fa fa-search"></button>
-          <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-        </div>
-      </form>
+    <div class="templatemo-sidebar" style="background-color:#1f2124">
       <div class="mobile-menu-icon">
         <i class="fa fa-bars"></i>
       </div>
       <nav class="templatemo-left-nav">
         <ul>
+          <header class="templatemo-site-header">
+            <?php
+            $Welcome = "Welcome";
+            echo "<h1>" . $Welcome . "<br>" . $_SESSION['username'] . "</h1>";
+            ?>
+          </header>
           <li>
             <a href="#" class="active"><i class="fa fa-home fa-fw"></i>Dashboard</a>
           </li>
           <li>
-            <a href="/TnP-Portal-IIITN/Drives/index.php"><i class="fa fa-bar-chart fa-fw"></i>Placement Drives</a>
+            <a href="preferences.php"><i class="fa fa-sliders fa-fw"></i>Your Profile</a>
           </li>
           <li>
-            <a href="preferences.php"><i class="fa fa-sliders fa-fw"></i>Preferences</a>
+            <a href="#"><i class="fa fa-bar-chart fa-fw"></i>Ongoing Placement Drives</a>
+          </li>
+          <li>
+            <a href="Notif.php"><i class="fa fa-bullhorn fa-fw"></i>Announcements</a>
+          </li>
+          <li>
+            <a href="ChangePassword.php"><i class="fa fa-key fa-fw"></i>Change Password</a>
           </li>
           <li>
             <a href="logout.php"><i class="fa fa-eject fa-fw"></i>Sign Out</a>
@@ -74,48 +94,24 @@ if ($_SESSION["username"]) {
     </div>
     <!-- Main content -->
     <div class="templatemo-content col-1 light-gray-bg">
-      <div class="templatemo-top-nav-container">
-        <div class="row">
-          <nav class="templatemo-top-nav col-lg-12 col-md-12">
-            <ul class="text-uppercase">
-              <li>
-                <a href="/TnP-Portal-IIITN/Homepage/index.php">Home CUSAT-SOE</a>
-              </li>
-              <li>
-                <a href="../Drives/index.php">Drives Homepage</a>
-              </li>
-              <li>
-                <a href="Notif.php">Notifications</a>
-              </li>
-              <li>
-                <a href="ChangePassword.php">Change Password</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
       <div class="templatemo-content-container">
         <div class="templatemo-flex-row flex-content-row">
           <div class="templatemo-content-widget white-bg col-2">
-            <i class="fa fa-times"></i>
             <div class="square"></div>
-            <h2 class="templatemo-inline-block">Welcome to CUSAT-SOE</h2>
+            <h2 class="templatemo-inline-block">Welcome to IIIT Nagpur</h2>
             <hr>
-            <p>Work is Magic and it defines you at every aspect of ur life. As you Work Hard u will become smart and the Irony is Every Smart worker will be a Successfull man where as worthless hardwork is like a monkey finding gold in a sea.
-              <a href="preferences.php""
-                target=" _parent">Go and Fill your Details in Preferences Tab</a>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi deleniti dignissimos sequi, temporibus dolores placeat at voluptate in delectus saepe.
+              <br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro et consequuntur voluptates laborum natus maxime sequi ducimus ullam odio quos similique itaque accusamus animi vel temporibus nam saepe provident quaerat, modi nostrum enim deleniti? Quam hic quasi sint est nemo.
             </p>
-            <p>We have got number of Partners from the companies who are tied up to our college and it is Incresasing. We are doing our Job of getting u Placed and
-              Being a Student its your duty to acompolish ur responsibilities.</p>
           </div>
           <div class="templatemo-content-widget white-bg col-1 text-center">
-            <i class="fa fa-times"></i>
             <h4 class="text-uppercase">Assigned Projects</h4>
             <h5 class="text-uppercase margin-bottom-10">Projects (Beta)</h5>
             <img src="images/bicycle.jpg" alt="Bicycle" class="img-circle img-thumbnail">
           </div>
           <div class="templatemo-content-widget white-bg col-1">
-            <i class="fa fa-times"></i>
             <h4 class="text-uppercase">Academics Progress</h4>
             <h5 class="text-uppercase">Grades of Progress</h5>
             <hr>
@@ -133,25 +129,21 @@ if ($_SESSION["username"]) {
         <div class="templatemo-flex-row flex-content-row">
           <div class="col-1">
             <div class="templatemo-content-widget orange-bg">
-              <i class="fa fa-times"></i>
+
               <div class="media">
                 <div class="media-left">
                   <a href="#">
                     <img class="media-object img-circle" src="images/sunset.jpg" alt="Sunset">
                   </a>
                 </div>
-                <a href="/TnP-Portal-IIITN/Drives/index.php">
 
-
-                  <div class="media-body">
-                    <h2 class="media-heading text-uppercase">Latest Drive</h2>
-                    <p>Click on and get the Latest Drive and Upcomming Drive Details</p>
-                  </div>
-                </a>
+                <div class="media-body">
+                  <h2 class="media-heading text-uppercase">Latest Drive</h2>
+                  <p>Click on and get the Latest Drive and Upcomming Drive Details</p>
+                </div>
               </div>
             </div>
             <div class="templatemo-content-widget white-bg">
-              <i class="fa fa-times"></i>
               <div class="media">
                 <div class="media-left">
                   <a href="#">
@@ -160,14 +152,15 @@ if ($_SESSION["username"]) {
                 </div>
                 <div class="media-body">
                   <h2 class="media-heading text-uppercase">Upcomming Events</h2>
-                  <p>Brace yourself for the Events that will take ur breath away. Get Started and be a Part of CUSAT-SOE Family</p>
+
+                  <p>Brace yourself for the Events that will take ur breath away. Get Started and be a Part of IIIT Nagpur Family</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-1">
             <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
-              <i class="fa fa-times"></i>
+
               <div class="panel-heading templatemo-position-relative">
                 <h2 class="text-uppercase">Top Placed Students</h2>
               </div>
@@ -207,11 +200,6 @@ if ($_SESSION["username"]) {
                 </div>
               </div>
               <!-- Second row ends -->
-              <footer class="text-right">
-                <p>Copyright &copy; 2018 CUSAT-SOE | Developed by
-                  <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine </a>
-                </p>
-              </footer>
             </div>
           </div>
         </div>
