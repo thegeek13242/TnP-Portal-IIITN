@@ -113,7 +113,7 @@ $connect = mysqli_connect('localhost','root','','details');
 // mysql_select_db('details');
 if (isset($_GET["page"])) { $page  = $_GET["page"]; } else { $page=1; };
 $start_from = ($page-1) * $num_rec_per_page;
-$sql = "SELECT * FROM basicdetails where Approve='1' DESC LIMIT $start_from, $num_rec_per_page";
+$sql = "SELECT * FROM basicdetails where Approve='1'";
 $rs_result = $connect->query ($sql); //run the query
 ?>
 <?php
@@ -128,7 +128,7 @@ $beaggregate= $_POST['beagg'];
 $backlogs = $_POST['curback'];
 $hisofbk = $_POST['hob'];
 $dety = $_POST['dy'];
-$sql = "SELECT * FROM basicdetails where Approve=1 and Branch='$branch' and SSLC>='$sslc' and `PU/Dip`>='$puaggregate' and BE>='$beaggregate' and Backlogs='$backlogs' and HofBacklogs='$hisofbk' and DetainYears='$dety'" ;
+$sql = "SELECT * FROM basicdetails where Approve='1' and Branch='$branch' and SSLC>='$sslc' and `PU/Dip`>='$puaggregate' and BE>='$beaggregate' and Backlogs='$backlogs' and HofBacklogs='$hisofbk' and DetainYears='$dety'" ;
  //run the query
 
  $sql1 = $connect->query($sql);
@@ -173,7 +173,7 @@ $connect = mysqli_connect('localhost','root','','details');
 // mysql_select_db('details');
 $sql = "SELECT * FROM basicdetails where Approve='1'";
 $rs_result = $connect->query($sql); //run the query
-$total_records = $rs_result->num_rows();  //count number of records
+$total_records = $rs_result->num_rows;  //count number of records
 $totalpage = ceil($total_records / $num_rec_per_page);
 
 $currentpage = (isset($_GET['page']) ? $_GET['page'] : 1);

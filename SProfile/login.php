@@ -78,7 +78,7 @@ if ($_SESSION["username"]) {
             <a href="preferences.php"><i class="fa fa-sliders fa-fw"></i>Your Profile</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-bar-chart fa-fw"></i>Ongoing Placement Drives</a>
+            <a href="../Drives/index.php"><i class="fa fa-bar-chart fa-fw"></i>Ongoing Placement Drives</a>
           </li>
           <li>
             <a href="Notif.php"><i class="fa fa-bullhorn fa-fw"></i>Announcements</a>

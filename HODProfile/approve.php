@@ -24,7 +24,7 @@ if($link === false)
 {
 die("error:".mysqli_connect_error());
 }
-$sql = "UPDATE `basicdetails` SET Approve='1',ApprovalDate='$dob' where USN = '$id' ";
+$sql = "UPDATE `basicdetails` SET Approve='1' where USN = '$id' ";
 if(mysqli_query($link,$sql))
 {
 echo "$id";

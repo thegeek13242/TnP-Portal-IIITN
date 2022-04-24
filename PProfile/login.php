@@ -75,7 +75,7 @@ if ($_SESSION["pusername"]) {
           <nav class="templatemo-top-nav col-lg-12 col-md-12">
             <ul class="text-uppercase">
               <li><a href="../../TnP-Portal-IIITN/Homepage/index.php">Home CUSAT-SOE</a></li>
-              <li><a href="../../Drives/index.php">Drives Home</a></li>
+              <li><a href="../Drives/index.php">Drives Home</a></li>
               <li><a href="Notif.php">Notifications</a></li>
               <li><a href="ChangePassword.php">Change Password</a></li>
             </ul>
@@ -143,8 +143,25 @@ if ($_SESSION["pusername"]) {
                   </a>
                 </div>
                 <div class="media-body">
-                  <h2 class="media-heading text-uppercase">Upcomming Events</h2>
-                  <p>Get the Latest on going Events in the campus and you can add one so that it reflects all the user database</p>
+                  <h2 class="media-heading text-uppercase">Drive Results</h2>
+                  <p>Latest Drive Result Overview</p>
+                  <?php
+                  $connect = mysqli_connect('localhost', 'root', '', 'details');
+                  // mysql_select_db('details');
+                  $RESULT = $connect->query("SELECT DISTINCT count(CompanyName) from addpdrive where PVenue LIKE '%CIT%' AND YEAR(Date)=YEAR(NOW())");
+                  $data = $RESULT->fetch_assoc();
+                  echo "<br><br><h3>Companies In Our Campus In This Year&nbsp:&nbsp";
+                  echo $data['count(CompanyName)'];
+                  $RESULT = $connect->query("SELECT count(Attendence) from updatedrive where Attendence=1 AND YEAR(Date)=YEAR(NOW())");
+                  $data = $RESULT->fetch_assoc();
+                  echo "<br><BR>Number of Students Attended In This Year&nbsp:&nbsp";
+                  echo $data['count(Attendence)'];
+                  $RESULT = $connect->query("SELECT count(Placed) from updatedrive where Placed=1 AND YEAR(Date)=YEAR(NOW())");
+                  $data = $RESULT->fetch_assoc();
+                  echo "<BR><br>Number of Students Placed In This Year&nbsp:&nbsp";
+                  echo $data['count(Placed)'];
+                  echo "</h3>";
+                  ?>
                 </div>
               </div>
             </div>

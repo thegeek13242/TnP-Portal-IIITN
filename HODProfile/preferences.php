@@ -82,7 +82,7 @@
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
                   <li><a href="../../TnP-Portal-IIITN/Homepage/index.php">Home CUSAT-SOE</a></li>
-                <li><a href="../../Drives/index.php">Drives</a></li>
+                <li><a href="../Drives/index.php">Drives</a></li>
                 <li><a href="Notif.php">Notification</a></li>
                 <li><a href="ChangePassword.php">Change Password</a></li>
               </ul>
@@ -93,7 +93,7 @@
           <div class="templatemo-content-widget white-bg">
             <h2 class="margin-bottom-10">Preferences</h2>
             <p>Update your Details here:</p>
-            <form action="pref.php" class="templatemo-login-form" method="post" enctype="multipart/form-data">
+            <form action="pref.php" class="templatemo-login-form" method="post">
               <div class="row form-group">
                 <div class="col-lg-6 col-md-6 form-group">                  
                     <label for="inputFirstName">First Name</label>
@@ -115,7 +115,7 @@
                 </div> 
               </div>
               <div class="form-group text-right">
-                <button type="submit" class="templatemo-blue-button">Update</button>
+                <button type="submit" name="update" class="templatemo-blue-button">Update</button>
                 <button type="reset" class="templatemo-white-button">Reset</button>
               </div>                           
             </form>

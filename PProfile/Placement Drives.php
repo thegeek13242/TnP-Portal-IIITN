@@ -147,20 +147,6 @@
                   </div>
                 </div>
               </div>
-              <div class="templatemo-content-widget orangge-bg">
-                <i class="fa fa-times"></i>
-                <div class="media">
-                  <div class="media-left">
-                    <a href="#">
-                      <img class="media-object img-circle" src="images/UI.png" alt="Sunset" width="100px" height="100px">
-                    </a>
-                  </div>
-                  <div class="media-body">
-                    <h2 class="media-heading text-uppercase">Upload Image to Gallery</h2>
-                    <p>Update the Image To PMS Gallery</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           <footer class="text-right">
