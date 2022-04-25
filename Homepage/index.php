@@ -78,9 +78,6 @@
             <li>
               <a class="page-scroll" href="../PProfile/index.php">Placement Login</a>
             </li>
-            <li>
-              <a class="page-scroll" href="../PriProfile/index.php">Administrative Login</a>
-            </li>
           </ul>
         </div>
         ';

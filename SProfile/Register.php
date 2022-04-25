@@ -113,9 +113,6 @@
 						<li>
 							<a href="../HODProfile/index.php">HOD Login</a>
 						</li>
-						<li>
-							<a href="../PriProfile/index.php">Administrative Login</a>
-						</li>
 					</ul>
 				</div>
 				<div class="col-md-3 ftr_navi ftr">

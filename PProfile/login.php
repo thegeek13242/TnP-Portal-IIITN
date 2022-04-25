@@ -22,6 +22,7 @@ if ($_SESSION["pusername"]) {
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/templatemo-style.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="/TnP-Portal-IIITN/Homepage/css/Navbar.css">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,76 +35,74 @@ if ($_SESSION["pusername"]) {
 
 <body>
   <!-- Left column -->
-  <div class="templatemo-flex-row">
-    <div class="templatemo-sidebar">
-      <header class="templatemo-site-header">
-        <div class="square"></div>
-        <?php
-        $Welcome = "How are You?";
-        echo "<h1>" . $Welcome . "<br>" . $_SESSION['pusername'] . "</h1>";
-        ?>>
-      </header>
-      <div class="profile-photo-container">
-        <img src="images/princpal.jpg" alt="Profile Photo" class="img-responsive">
-        <div class="profile-photo-overlay"></div>
-      </div>
-      <!-- Search box -->
-      <form class="templatemo-search-form" role="search">
-        <div class="input-group">
-          <button type="submit" class="fa fa-search"></button>
-          <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+  <div class="parent-container">
+    <div class="navbar-container">
+      <nav class="navbar">
+        <div class="nav-logo">
+          <div class="iiitn-logo">
+            <a href="/TnP-Portal-IIITN/Homepage/">
+              <img src="/TnP-Portal-IIITN/Homepage/images/newLogo.png" alt="iiitn-logo" />
+            </a>
+          </div>
+          <div class="nav-title">
+            <div class="logo-text">
+              <h1>Indian Institute of Information Technology, Nagpur</h1>
+            </div>
+            <div class="tagline">
+              <h2>
+                An Institution of National Importance By An Act of Parliament
+              </h2>
+            </div>
+          </div>
         </div>
-      </form>
+      </nav>
+    </div>
+  </div>
+  <hr class="nav-divider" />
+  <!-- Left column -->
+  <div class="templatemo-flex-row">
+    <div class="templatemo-sidebar" style="background-color:#1f2124">
       <div class="mobile-menu-icon">
         <i class="fa fa-bars"></i>
       </div>
       <nav class="templatemo-left-nav">
         <ul>
+          <header class="templatemo-site-header">
+            <?php
+            $Welcome = "How are You?";
+            echo "<h1>" . $Welcome . "<br>" . $_SESSION['pusername'] . "</h1>";
+            ?>
+          </header>
+          </header>
           <li><a href="#" class="active"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
-          <li><a href="Placement Drives.php"><i class="fa fa-home fa-fw"></i>Placement Drives</a></li>
+          <li><a href="PlacementDrives.php"><i class="fa fa-home fa-fw"></i>Placement Drives</a></li>
           <li><a href="manage-users.php"><i class="fa fa-users fa-fw"></i>View Students</a></li>
-          <li><a href="queries.php"><i class="fa fa-users fa-fw"></i>Queries</a></li>
-          li><a href="Students Eligibility.php"><i class="fa fa-sliders fa-fw"></i>Students Eligibility Status</a></li>
+          <li><a href="queries.php"><i class="fa fa-question-circle fa-fw"></i>Queries</a></li>
+          <li><a href="StudentsEligibility.php"><i class="fa fa-sliders fa-fw"></i>Students Eligibility Status</a></li>
+          <li><a href="preferences.php"><i class="fa fa-sliders fa-fw"></i>Your Profile</a></li>
           <li><a href="logout.php"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
         </ul>
       </nav>
     </div>
     <!-- Main content -->
     <div class="templatemo-content col-1 light-gray-bg">
-      <div class="templatemo-top-nav-container">
-        <div class="row">
-          <nav class="templatemo-top-nav col-lg-12 col-md-12">
-            <ul class="text-uppercase">
-              <li><a href="../../TnP-Portal-IIITN/Homepage/index.php">Home CUSAT-SOE</a></li>
-              <li><a href="../Drives/index.php">Drives Home</a></li>
-              <li><a href="Notif.php">Notifications</a></li>
-              <li><a href="ChangePassword.php">Change Password</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
       <div class="templatemo-content-container">
         <div class="templatemo-flex-row flex-content-row">
           <div class="templatemo-content-widget white-bg col-2">
-            <i class="fa fa-times"></i>
             <div class="square"></div>
-            <h2 class="templatemo-inline-block">Welcome to CUSAT-SOE</h2>
+            <h2 class="templatemo-inline-block">Welcome to IIIT Nagpur</h2>
             <p></p>
-            <p>Hello Officer! Have a great day with us! With CUSAT-SOE Account, You can add drives, Send Notifications and View the Eligibility Criteria of Students.</p>
+            <p>Hello Officer! Have a great day with us! With this Account, You can add drives, Send Notifications and View the Eligibility Criteria of Students.</p>
             <p>Hope you enjoy doing that. Greetings!!</p>
-            <p><a href="Placement Drives.php">Placement Drives</a></p>
-            <p><a href="manage-users.php">View Students</a></p>
             <p><a href="preferences.php">Update your Profile</a></p>
 
           </div>
           <div class="templatemo-content-widget white-bg col-1 text-center">
-            <i class="fa fa-times"></i>
             <h2 class="text-uppercase">Our Motto</h2>
             <h5 class="text-uppercase margin-bottom-10">Working with Confidence</h5>
             <img src="images/bicycle.jpg" alt="Bicycle" class="img-circle img-thumbnail">
           </div>
           <div class="templatemo-content-widget white-bg col-1">
-            <i class="fa fa-times"></i>
             <h2 class="text-uppercase">Dictum</h2>
             <h3 class="text-uppercase">Sedvel Erat Non</h3>
             <hr>
@@ -121,7 +120,7 @@ if ($_SESSION["pusername"]) {
         <div class="templatemo-flex-row flex-content-row">
           <div class="col-1">
             <div class="templatemo-content-widget orange-bg">
-              <i class="fa fa-times"></i>
+
               <div class="media">
                 <div class="media-left">
                   <a href="#">
@@ -135,7 +134,6 @@ if ($_SESSION["pusername"]) {
               </div>
             </div>
             <div class="templatemo-content-widget white-bg">
-              <i class="fa fa-times"></i>
               <div class="media">
                 <div class="media-left">
                   <a href="#">
@@ -168,59 +166,53 @@ if ($_SESSION["pusername"]) {
           </div>
           <div class="col-1">
             <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
-              <i class="fa fa-times"></i>
+
               <div class="panel-heading templatemo-position-relative">
                 <h2 class="text-uppercase">Top Placed Students</h2>
               </div>
               <div class="templatemo-content-container">
-          <div class="templatemo-content-widget no-padding">
-            <div class="panel panel-default table-responsive">
-			<table class="table table-striped table-bordered templatemo-user-table">
-                <thead>
-                  <tr>            
-                    <td><a class="white-text templatemo-sort-by">Name</a></td>
-                    <td><a  class="white-text templatemo-sort-by">Branch</a></td>
-                    <td><a  class="white-text templatemo-sort-by">Batch</a></td>
-                    <td><a  class="white-text templatemo-sort-by">Company</a></td>
-					          <td><a  class="white-text templatemo-sort-by">CTC</a> </td>
-				  </thead>
-			   </tr>
-              <div class="table-responsive">
-                <table class="table table-striped table-bordered">
-                  <?php
-                  $connect = mysqli_connect('localhost', 'root', '', 'placement');
-                  //select rows of students with top 5 salaries
-                  $sql = $connect->query("SELECT * FROM presult ORDER BY cast(lpa as int) DESC LIMIT 5");
-                  while ($row = $sql->fetch_assoc()) {
-                    print "<tr>";
-                    echo '<td>' . $row['name'] . '</td>';
-                    echo '<td>' . $row['branch'] . '</td>';
-                    echo '<td>' . $row['year'] . '</td>';
-                    echo '<td>' . $row['company'] . '</td>';
-                    echo '<td>' . $row['lpa'] . '</td>';
-                    print "</tr>";
-                  }
-                  ?>
-                  </tbody>
-                </table>
-              </div>
+                <div class="templatemo-content-widget no-padding">
+                  <div class="panel panel-default table-responsive">
+                    <table class="table table-striped table-bordered templatemo-user-table">
+                      <thead>
+                        <tr>
+                          <td><a class="white-text templatemo-sort-by">Name</a></td>
+                          <td><a class="white-text templatemo-sort-by">Branch</a></td>
+                          <td><a class="white-text templatemo-sort-by">Batch</a></td>
+                          <td><a class="white-text templatemo-sort-by">Company</a></td>
+                          <td><a class="white-text templatemo-sort-by">CTC</a> </td>
+                      </thead>
+                      </tr>
+                      <div class="table-responsive">
+                        <table class="table table-striped table-bordered">
+                          <?php
+                          $connect = mysqli_connect('localhost', 'root', '', 'placement');
+                          //select rows of students with top 5 salaries
+                          $sql = $connect->query("SELECT * FROM presult ORDER BY cast(lpa as int) DESC LIMIT 5");
+                          while ($row = $sql->fetch_assoc()) {
+                            print "<tr>";
+                            echo '<td>' . $row['name'] . '</td>';
+                            echo '<td>' . $row['branch'] . '</td>';
+                            echo '<td>' . $row['year'] . '</td>';
+                            echo '<td>' . $row['company'] . '</td>';
+                            echo '<td>' . $row['lpa'] . '</td>';
+                            print "</tr>";
+                          }
+                          ?>
+                          </tbody>
+                        </table>
+                      </div>
+                  </div>
+                </div>
+              </div> <!-- Second row ends -->
             </div>
           </div>
-        </div> <!-- Second row ends -->
+        </div>
 
-        <footer class="text-right">
-          <p>Copyright &copy; 2018 CUSAT-SOE | Developed by
-            <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine</a>
-          </p>
-        </footer>
-      </div>
-    </div>
-  </div>
-
-  <!-- JS -->
-  <script src="js/jquery-1.11.2.min.js"></script> <!-- jQuery -->
-  <script src="js/jquery-migrate-1.2.1.min.js"></script> <!--  jQuery Migrate Plugin -->
-  <script type="text/javascript" src="js/templatemo-script.js"></script> <!-- Templatemo Script -->
+        <!-- JS -->
+        <script src="js/jquery-1.11.2.min.js"></script> <!-- jQuery -->
+        <script src="js/jquery-migrate-1.2.1.min.js"></script> <!--  jQuery Migrate Plugin -->
+        <script type="text/javascript" src="js/templatemo-script.js"></script> <!-- Templatemo Script -->
 
 </body>
 
