@@ -38,7 +38,7 @@ if (isset($_SESSION['pusername'])) {
 
 <body>
   <!-- Left column -->
-    <div class="parent-container">
+  <div class="parent-container">
     <div class="navbar-container">
       <nav class="navbar">
         <div class="nav-logo">
@@ -71,38 +71,28 @@ if (isset($_SESSION['pusername'])) {
       <nav class="templatemo-left-nav">
         <ul>
           <header class="templatemo-site-header">
-          <?php
-        $Welcome = "Welcome";
-        echo "<h1>" . $Welcome . "<br>" . $_SESSION['pusername'] . "</h1>";
-        echo "<br>";
+            <?php
+            $Welcome = "Welcome";
+            echo "<h1>" . $Welcome . "<br>" . $_SESSION['pusername'] . "</h1>";
+            echo "<br>";
 
-        ?>
+            ?>
           </header>
           </header>
-          <li><a href="../login.php" class="active"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
-          <li><a href="PlacementDrives.php"><i class="fa fa-home fa-fw"></i>Placement Drives</a></li>
-          <li><a href="manage-users.php"><i class="fa fa-users fa-fw"></i>View Students</a></li>
+          <li><a href="../login.php"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
+          <li><a href="../PlacementDrives.php"><i class="fa fa-home fa-fw"></i>Placement Drives</a></li>
+          <li><a href="../manage-users.php"><i class="fa fa-users fa-fw"></i>View Students</a></li>
           <li><a href="../queries.php"><i class="fa fa-question-circle fa-fw"></i>Queries</a></li>
           <li><a href="../StudentsEligibility.php"><i class="fa fa-sliders fa-fw"></i>Students Eligibility Status</a></li>
-          <li><a href="preferences.php"><i class="fa fa-sliders fa-fw"></i>Your Profile</a></li>
-          <li><a href="logout.php"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+          <li><a href="../preferences.php"><i class="fa fa-sliders fa-fw"></i>Your Profile</a></li>
+          <li><a href="../Notif.php"><i class="fa fa-bullhorn fa-fw"></i>Notifications</a></li>
+          <li><a href="../ChangePassword.php"><i class="fa fa-key fa-fw"></i>Change Password</a></li>
+          <li><a href="../logout.php"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
         </ul>
       </nav>
     </div>
     <!-- Main content -->
     <div class="templatemo-content col-1 light-gray-bg">
-      <div class="templatemo-top-nav-container">
-        <div class="row">
-          <nav class="templatemo-top-nav col-lg-12 col-md-12">
-            <ul class="text-uppercase">
-              <li><a href="../../../TnP-Portal-IIITN/Homepage/index.php">Home IIITN- </a></li>
-              <li><a href="../../../Drives/index.php">Drives Home</a></li>
-              <li><a href="../Notif.php">Notifications</a></li>
-              <li><a href="ChangePassword.php">Change Password</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
       <div class="templatemo-content-container">
         <div class="templatemo-content-widget no-padding">
           <div class="panel panel-default table-responsive">
@@ -250,15 +240,6 @@ WHERE a.CompanyName = u.CompanyName";
           ?>
         </ul>
       </div>
-
-
-
-
-      <footer class="text-right">
-        <p>Copyright &copy;  
-          <a href=" https://iiitn.ac.in" target="_parent">ZNumerique Technologies</a>
-        </p>
-      </footer>
     </div>
   </div>
   </div>

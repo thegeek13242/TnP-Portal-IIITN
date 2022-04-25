@@ -56,11 +56,7 @@
 						<button type="submit" name="s7" >search</button>
 						<br><br>
 					</form>
-</center>
-<footer class="text-right">
-            <p>Copyright &copy; 2018 IIITN-SOE | Developed by
-              <a href=" https://iiitn.ac.in" target="_parent">HyperMine</a>
-          </footer>         
+</center>      
         </div>
       </div>
     </div>

@@ -77,9 +77,11 @@ if (isset($_SESSION['pusername'])) {
           <li><a href="login.php"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
           <li><a href="PlacementDrives.php"><i class="fa fa-home fa-fw"></i>Placement Drives</a></li>
           <li><a href="manage-users.php"><i class="fa fa-users fa-fw"></i>View Students</a></li>
-          <li><a href="#" class="active"><i class="fa fa-question-circle fa-fw"></i>Queries</a></li>
+          <li><a href="queries.php" class="active"><i class="fa fa-question-circle fa-fw"></i>Queries</a></li>
           <li><a href="StudentsEligibility.php"><i class="fa fa-sliders fa-fw"></i>Students Eligibility Status</a></li>
           <li><a href="preferences.php"><i class="fa fa-sliders fa-fw"></i>Your Profile</a></li>
+          <li><a href="Notif.php"><i class="fa fa-bullhorn fa-fw"></i>Notifications</a></li>
+          <li><a href="ChangePassword.php"><i class="fa fa-key fa-fw"></i>Change Password</a></li>
           <li><a href="logout.php"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
         </ul>
       </nav>

@@ -20,6 +20,7 @@ if (isset($_SESSION['pusername'])) {
   <title>Company Details</title>
   <meta name="description" content="">
   <meta name="author" content="templatemo">
+  <link type="text/css" rel="stylesheet" href="/TnP-Portal-IIITN/Homepage/css/Navbar.css">
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
   <link href="../css/font-awesome.min.css" rel="stylesheet">
@@ -28,64 +29,65 @@ if (isset($_SESSION['pusername'])) {
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  [if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]
 
   </head>
   <body>  
     <!-- Left column -->
-    <div class="templatemo-flex-row">
-      <div class="templatemo-sidebar">
-        <header class="templatemo-site-header">
-          <div class="square"></div>
-          <?php
-          $Welcome = "Welcome";
-          echo "<h1>" . $Welcome . "<br>" . $_SESSION['pusername'] . "</h1>";
-          echo "<br>";
-
-          ?>
-        </header>
-        <div class="profile-photo-container">
-          <img src="../images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">  
-          <div class="profile-photo-overlay"></div>
-        </div>      
-        <!-- Search box -->
-        <form class="templatemo-search-form" role="search">
-          <div class="input-group">
-              <button type="submit" class="fa fa-search"></button>
-              <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">           
+    <div class="parent-container">
+    <div class="navbar-container">
+      <nav class="navbar">
+        <div class="nav-logo">
+          <div class="iiitn-logo">
+            <a href="/TnP-Portal-IIITN/Homepage/">
+              <img src="/TnP-Portal-IIITN/Homepage/images/newLogo.png" alt="iiitn-logo" />
+            </a>
           </div>
-        </form>
-        <div class="mobile-menu-icon">
-            <i class="fa fa-bars"></i>
-          </div>
-        <nav class="templatemo-left-nav">          
-           <ul>
-             <li><a href="../login.php"><i class="fa fa-home fa-fw"></i>Dashboard</a></li> 
-            <li><a href="../TnP-Portal-IIITN Drives.php" class="active"><i class="fa fa-home fa-fw"></i>Placement Drives</a></li>           
-            <li><a href="../manage-users.php"><i class="fa fa-users fa-fw"></i>View Students</a></li>
-            <li><a href="../queries.php"><i class="fa fa-users fa-fw"></i>Queries</a></li>
-            <li><a href="../Students Eligibility.php"><i class="fa fa-sliders fa-fw"></i>Students Eligibility Status</a></li>
-            <li><a href="../logout.php"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
-          </ul>  
-        </nav>
-      </div>
-      <!-- Main content --> 
-      <div class="templatemo-content col-1 light-gray-bg">
-        <div class="templatemo-top-nav-container">
-          <div class="row">
-            <nav class="templatemo-top-nav col-lg-12 col-md-12">
-              <ul class="text-uppercase">
-               <li><a href="../../TnP-Portal-IIITN/Homepage/index.php">Home IIITN- </a></li>
-                <li><a href="">Drives Home</a></li>
-                <li><a href="Notif.php">Notifications</a></li>
-                <li><a href="ChangePassword.php">Change Password</a></li>
-              </ul> 
-            </nav> 
+          <div class="nav-title">
+            <div class="logo-text">
+              <h1>Indian Institute of Information Technology, Nagpur</h1>
+            </div>
+            <div class="tagline">
+              <h2>
+                An Institution of National Importance By An Act of Parliament
+              </h2>
+            </div>
           </div>
         </div>
+      </nav>
+    </div>
+  </div>
+  <hr class="nav-divider" />
+  <!-- Left column -->
+  <div class="templatemo-flex-row">
+    <div class="templatemo-sidebar" style="background-color:#1f2124">
+      <div class="mobile-menu-icon">
+        <i class="fa fa-bars"></i>
+      </div>
+      <nav class="templatemo-left-nav">
+        <ul>
+          <header class="templatemo-site-header">
+            <?php
+            $Welcome = "Welcome";
+            echo "<h1>" . $Welcome . "<br>" . $_SESSION['pusername'] . "</h1>";
+            echo "<br>";
+
+            ?>
+          </header>
+          </header>
+          <li><a href="../login.php"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
+          <li><a href="../PlacementDrives.php"><i class="fa fa-home fa-fw"></i>Placement Drives</a></li>
+          <li><a href="../manage-users.php"><i class="fa fa-users fa-fw"></i>View Students</a></li>
+          <li><a href="../queries.php"><i class="fa fa-question-circle fa-fw"></i>Queries</a></li>
+          <li><a href="../StudentsEligibility.php"><i class="fa fa-sliders fa-fw"></i>Students Eligibility Status</a></li>
+          <li><a href="../preferences.php"><i class="fa fa-sliders fa-fw"></i>Your Profile</a></li>
+          <li><a href="../Notif.php"><i class="fa fa-bullhorn fa-fw"></i>Notifications</a></li>
+          <li><a href="../ChangePassword.php"><i class="fa fa-key fa-fw"></i>Change Password</a></li>
+          <li><a href="../logout.php"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+        </ul>
+      </nav>
+    </div>
+      <!-- Main content --> 
+      <div class="templatemo-content col-1 light-gray-bg">
         <div class="templatemo-content-container">
           <div class="templatemo-content-widget no-padding">
             <div class="panel panel-default table-responsive">
