@@ -3,8 +3,8 @@
 
 <head>
 	<!--favicon-->
-	<link rel="shortcut icon" href="favicon.ico" type="image/icon">
-	<link rel="icon" href="favicon.ico" type="image/icon">
+	<link rel="shortcut icon" href="../Homepage/images/newLogo.png" type="image/icon">
+	<link rel="icon" href="../Homepage/images/newLogo.png" type="image/icon">
 	<title>Placement Drives Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/php; charset=utf-8" />
@@ -270,7 +270,6 @@
 						<li><a href="/TnP-Portal-IIITN/SProfile/index.php">Student Login</a></li>
 						<li><a href="/TnP-Portal-IIITN/HODProfile/index.php">HOD Login</a></li>
 						<li><a href="/TnP-Portal-IIITN/PProfile/index.php">TnP Login</a></li>
-						<li><a href="/TnP-Portal-IIITN/PriProfile/index.php">Admin Login</a></li>
 					</ul>
 				</div>
 				<div class="col-xs-6 col-md-3">

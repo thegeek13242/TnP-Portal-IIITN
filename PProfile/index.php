@@ -136,7 +136,6 @@ include 'index1.php';
 						<li><a href="/TnP-Portal-IIITN/SProfile/index.php">Student Login</a></li>
 						<li><a href="/TnP-Portal-IIITN/HODProfile/index.php">HOD Login</a></li>
 						<li><a href="/TnP-Portal-IIITN/PProfile/index.php">TnP Login</a></li>
-						<li><a href="/TnP-Portal-IIITN/PriProfile/index.php">Admin Login</a></li>
 					</ul>
 				</div>
 				<div class="col-xs-6 col-md-3">

@@ -17,7 +17,7 @@
     left: 50%;
     margin-top: -100px;
     margin-left: -200px;">
-Enter the USN:<input type="text" name="id"><br><br>
+Enter the BT Number:<input type="text" name="id"><br><br>
 Enter the Date: <input type="date" name="DOB" class="form-control" id="DOB" placeholder="DD/MM/YYYY"><br><br>
 <input type="submit" value="approve">
 

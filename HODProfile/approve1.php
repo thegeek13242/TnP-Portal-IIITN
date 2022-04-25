@@ -10,7 +10,7 @@
 <html>
 
 <form action="approve.php" method="post">
-Enter the USN:<input type="text" name="id"><br><br>
+Enter the BT Number:<input type="text" name="id"><br><br>
 <input type="submit" value="approve">
 
 </form>

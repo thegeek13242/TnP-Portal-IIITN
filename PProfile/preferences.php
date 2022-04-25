@@ -106,7 +106,7 @@ if ($_SESSION["pusername"]) {
               </div>
 
               <div class="col-lg-6 col-md-6 form-group">
-                <label for="usn">USN</label>
+                <label for="usn">BT Number</label>
                 <input type="text" name="USN" class="form-control" id="usn" placeholder="1CG12IS000">
               </div>
 

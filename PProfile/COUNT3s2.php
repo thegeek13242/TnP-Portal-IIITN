@@ -52,7 +52,7 @@ echo "</h3>";
     echo $row['FirstName'];
 	print "<br></td><td>Last Name :";
 	echo $row['LastName'];
-	print "<br></td><td>USN :";
+	print "<br></td><td>BT Number :";
 	echo $row['USN'];
 	print "<br></td><td>Mobile :";
 	echo $row['Mobile'];

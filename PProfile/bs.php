@@ -49,7 +49,7 @@
               
                     <td><a  class="white-text templatemo-sort-by">First Name </a></td>
                     <td><a class="white-text templatemo-sort-by">Last Name </a></td>
-                    <td><a class="white-text templatemo-sort-by">USN</a></td>
+                    <td><a class="white-text templatemo-sort-by">BT Number</a></td>
                     <td><a  class="white-text templatemo-sort-by">Mobile </a></td>
 					   <td><a  class="white-text templatemo-sort-by">Email</a></td>
                        <td><a  class="white-text templatemo-sort-by">DOB </a></td>
@@ -69,14 +69,13 @@
 
 		
 $num_rec_per_page=2;
-mysql_connect('localhost','root','');
-mysql_select_db('details');
+$connect = mysqli_connect('localhost','root','', 'deatils');
 if (isset($_GET["page"])) { $page  = $_GET["page"]; } else { $page=1; }; 
 $start_from = ($page-1) * $num_rec_per_page; 
 $sql = "SELECT * FROM basicdetails where Approve='1' and Branch='Basic Science' LIMIT $start_from, $num_rec_per_page"; 
-$rs_result = mysql_query ($sql); //run the query
+$rs_result = mysqli_query($connect, $sql); //run the query
 
-while ($row = mysql_fetch_assoc($rs_result)) 
+while ($row = mysqli_fetch_assoc($rs_result)) 
 { 
 
             print "<tr>"; 
@@ -117,11 +116,10 @@ print "</tr>";
    <?php 
 		
 $num_rec_per_page=2;
-mysql_connect('localhost','root','');
-mysql_select_db('details');
+mysqli_connect('localhost','root','', 'details');
 $sql = "SELECT * FROM basicdetails where Approve='1' and Branch='Basic Science'"; 
-$rs_result = mysql_query($sql); //run the query
-$total_records = mysql_num_rows($rs_result);  //count number of records
+$rs_result = mysqli_query($connect, $sql); //run the query
+$total_records = mysqli_num_rows($rs_result);  //count number of records
 $totalpage = ceil($total_records / $num_rec_per_page); 
 
  

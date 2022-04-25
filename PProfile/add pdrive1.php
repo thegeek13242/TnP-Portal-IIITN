@@ -1,6 +1,5 @@
 <?php
-$connect = mysql_connect("localhost", "root", ""); // Establishing Connection with Server
-mysql_select_db("details"); // Selecting Database from Server
+$connect = mysqli_connect("localhost", "root", "", 'details'); // Establishing Connection with Server
 if(isset($_POST['submit']))
 { 
 $cname = $_POST['compny'];
@@ -16,7 +15,7 @@ $breakstud = $_POST['break'];
 $otherdet = $_POST['odetails'];
 if($cname !=''||$date !='')
 {
-    if($query = mysql_query("INSERT INTO addpdrive(CompanyName, Date, campusPool, poolcampusVenue, SSLCAgg, PUDIPLOMAgg, BEAgg, CurrentBacklogs, HistoryBacklogs, BreakStudies, otherDetails)
+    if($query = mysqli_query($connect, "INSERT INTO addpdrive(CompanyName, Date, campusPool, poolcampusVenue, SSLCAgg, PUDIPLOMAgg, BEAgg, CurrentBacklogs, HistoryBacklogs, BreakStudies, otherDetails)
 		VALUES ('$cname', '$date', '$campool', '$poolven', '$per', '$puagg', '$beaggregate', '$back', '$hisofbk', '$breakstud', '$otherdet')")){
                       echo "<center>Drive Inserted successfully</center>";
 		}

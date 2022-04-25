@@ -91,7 +91,7 @@
                   <tr>
 					<td><a href="" class="white-text templatemo-sort-by">First Name <span class="caret"></span></a></td>
                     <td><a href="" class="white-text templatemo-sort-by">Last Name <span class="caret"></span></a></td>
-                    <td><a href="" class="white-text templatemo-sort-by">USN<span class="caret"></span></a></td>
+                    <td><a href="" class="white-text templatemo-sort-by">BT Number<span class="caret"></span></a></td>
                     <td><a href="" class="white-text templatemo-sort-by">Mobile<span class="caret"></span></a></td>
 					   <td><a href="" class="white-text templatemo-sort-by">Email<span class="caret"></span></a></td>
                        <td><a href="" class="white-text templatemo-sort-by">Dob <span class="caret"></span></a></td>

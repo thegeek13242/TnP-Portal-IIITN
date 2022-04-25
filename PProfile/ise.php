@@ -49,7 +49,7 @@
 				  <td>
 				  <a class="white-text templatemo-sort-by">First Name </a></td>
                     <td><a  class="white-text templatemo-sort-by">Last Name  </a></td>
-                    <td><a class="white-text templatemo-sort-by">USN </a></td>
+                    <td><a class="white-text templatemo-sort-by">BT Number </a></td>
                     <td><a  class="white-text templatemo-sort-by">Mobile </a></td>
 					   <td><a class="white-text templatemo-sort-by">Email </a></td>
                        <td><a  class="white-text templatemo-sort-by">DOB </a></td>

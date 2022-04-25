@@ -42,7 +42,7 @@
                   <tr>            
                     <td><a class="white-text templatemo-sort-by">First Name </a></td>
                     <td><a  class="white-text templatemo-sort-by">Last Name </a></td>
-                    <td><a  class="white-text templatemo-sort-by">USN </a></td>
+                    <td><a  class="white-text templatemo-sort-by">BT Number </a></td>
                     <td><a  class="white-text templatemo-sort-by">Mobile </a></td>
 					   <td><a  class="white-text templatemo-sort-by">Email </a></td>
                        <td><a  class="white-text templatemo-sort-by">DOB</a></td>
@@ -57,18 +57,18 @@
 				  </thead>
 			   </tr>			   
  <?php		
-mysql_connect('localhost','root','');
-mysql_select_db('details');
+$connect = mysqli_connect('localhost','root','', 'details');
+
 if(isset($_POST['s6']))
 { 
 $Cpu = $_POST['cpu'];
-$RESULT = mysql_query("SELECT count(*) FROM basicdetails WHERE `Approve`='1' AND `PU/Dip`>='$Cpu'");
-$data = mysql_fetch_assoc($RESULT);
+$RESULT = mysqli_query($connect, "SELECT count(*) FROM basicdetails WHERE `Approve`='1' AND `PU/Dip`>='$Cpu'");
+$data = mysqli_fetch_assoc($RESULT);
 echo "<br><h3>Students Scored Above '$Cpu' in PU/Diploma&nbsp:&nbsp";
 echo $data['count(*)'];
 echo "</h3>";
-$sql = mysql_query("SELECT * FROM basicdetails WHERE `Approve`='1' AND `PU/Dip`>='$Cpu'");
-while($row = mysql_fetch_assoc($sql))
+$sql = mysqli_query($connect, "SELECT * FROM basicdetails WHERE `Approve`='1' AND `PU/Dip`>='$Cpu'");
+while($row = mysqli_fetch_assoc($sql))
 {
 	            print "<tr>"; 	
     echo '<td>'.$row['FirstName'].'</td>';	
