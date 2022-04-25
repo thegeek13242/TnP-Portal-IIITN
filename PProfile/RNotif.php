@@ -80,7 +80,7 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-               <li><a href="../../TnP-Portal-IIITN/Homepage/index.php">Home CUSAT-SOE</a></li>
+               <li><a href="../../TnP-Portal-IIITN/Homepage/index.php">Home IIITN-SOE</a></li>
                 <li><a href="">Drives Home</a></li>
                 <li><a href="Notif.php" class="active">Notifications</a></li>
                 <li><a href="ChangePassword.php">Change Password</a></li>
@@ -108,8 +108,8 @@
 
           </div>
           <footer class="text-right">
-            <p>Copyright &copy; 2018 CUSAT-SOE
-            | Developed by <a href="http://wafferdev,wordpress.com" target="_parent">HyperMine</a></p>
+            <p>Copyright &copy; 2018 IIITN-SOE
+            | Developed by <a href="http://iiitn.ac.in" target="_parent">HyperMine</a></p>
           </footer>
         </div>
       </div>

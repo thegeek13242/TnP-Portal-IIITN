@@ -95,8 +95,8 @@ print "</tr>";
 			  </div>
 			  </div>
  <footer class="text-right">
-					<p>Copyright &copy; 2015 CIT-PMS | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">ZNumerique Technologies</a>
+					<p>Copyright &copy;  
+              <a href=" https://iiitn.ac.in" target="_parent">IIITN</a>
 				</div>
           </footer>         
         </div>

@@ -113,8 +113,8 @@ if(isset($_SESSION['reset']))
 					<a href="mailto:soumen1696@gmail.com">soumen1696@gmail.com</a>
 				</div>
 				<div class="col-md-3 ftr-logo">
-					<p>Copyright &copy; 2018 CUSAT-SOE | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine</a>
+					<p>Copyright &copy; 2018 IIITN-SOE | Developed by
+              <a href=" https://iiitn.ac.in" target="_parent">HyperMine</a>
 				</div>
 				</div>
 				<div class="clearfix"></div>

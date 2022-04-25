@@ -58,8 +58,8 @@
 					</form>
 </center>
 <footer class="text-right">
-            <p>Copyright &copy; 2018 CUSAT-SOE | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine</a>
+            <p>Copyright &copy; 2018 IIITN-SOE | Developed by
+              <a href=" https://iiitn.ac.in" target="_parent">HyperMine</a>
           </footer>         
         </div>
       </div>

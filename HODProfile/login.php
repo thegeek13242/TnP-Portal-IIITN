@@ -134,12 +134,14 @@ if (isset($_SESSION['husername'])) {
 
             <div class="media">
               <div class="media-left">
-                <a href="#">
+                <a href="../Drives/index.php">
                   <img class="media-object img-circle" src="images/sunset.jpg" alt="Sunset">
                 </a>
               </div>
               <div class="media-body">
-                <h2 class="media-heading text-uppercase">Upcomming Events</h2>
+              <a href="../Drives/index.php">
+                <h2 class="media-heading text-uppercase">Upcoming Events</h2>
+              </a>
                 <p>Get the Latest Upcomming Events in Our Campus and Fasten ur Seat bealts to host them</p>
               </div>
             </div>

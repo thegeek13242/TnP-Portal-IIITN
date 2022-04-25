@@ -99,7 +99,7 @@
 					<div class="jumbotron banner-bottom-left wow fadeInLeft animated animated" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;">
 						<h3>Placement and Training Department</h3>
 						<h5></span></h5>
-						<p>Our Institute is located in South Kalamessery, a well known place of learning. Our college is affiliated to Cochin University Of Science And Technological, Kochi (Kerala), recognized by AICTE, New Delhi, & by Government of Kerala. Within a short span of 47 years we have made our presence felt strongly in this competitive educational sector and we have many firsts to our credit. Our ISO Certification and NBA Accreditation speak of our commitment to quality systems and education. Our credentials are well appreciated by many industries, engineering institutes, professional bodies, government organizations etc. In the recent past our institute has been rated A Grade and is included among “THE BEST ENGINEERING COLLEGES IN INDIA” by Career360, a popular magazine promoted by OUTLOOK Group.
+						<p>Our Institute is located in Nagpur, a well known place of learning. Our college is affiliated to IIITN, an Insitute of National Importance
 						</p>
 					</div>
 				</div>
@@ -113,7 +113,7 @@
 	<div class="about-bottom">
 		<!-- container -->
 		<div class="container">
-			<h3 class="wow fadeInRight animated" style="visibility: visible;">A New Generation of CUSAT</h3>
+			<h3 class="wow fadeInRight animated" style="visibility: visible;">A New Generation of IIITN</h3>
 			<div class="about-bottom-grids">
 				<div class="col-md-6 about-bottom-left wow fadeInLeft animated animated" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;">
 					<h4>What We Offer?</h4>

@@ -81,7 +81,7 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-                  <li><a href="../../TnP-Portal-IIITN/Homepage/index.php">Home CUSAT-SOE</a></li>
+                  <li><a href="../../TnP-Portal-IIITN/Homepage/index.php">Home IIITN-SOE</a></li>
                 <li><a href="../Drives/index.php">Drives Home</a></li>
                 <li><a href="Notif.php">Notification</a></li>
                 <li><a href="ChangePassword.php">Change Password</a></li>
@@ -124,8 +124,8 @@
             </div>
           </div>
           <footer class="text-right">
-            <p>Copyright &copy; 2018 CUSAT-SOE | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine</a>
+            <p>Copyright &copy; 2018 IIITN-SOE | Developed by
+              <a href=" https://iiitn.ac.in" target="_parent">HyperMine</a>
           </footer>
         </div>
       </div>

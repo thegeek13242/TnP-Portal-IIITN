@@ -121,8 +121,8 @@
 					<a href="mailto:cittumkur@rediffmail.com">cittumkur@rediffmail.com</a>
 				</div>
 				<div class="col-md-3 ftr-logo">
-					<p>Copyright &copy; 2015 CIT-PMS | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">ZNumerique Technologies</a>
+					<p>Copyright &copy;  
+              <a href=" https://iiitn.ac.in" target="_parent">IIITN</a>
 				</div>
 				</div>
 				<div class="clearfix"></div>
