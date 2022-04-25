@@ -16,8 +16,8 @@ if ($_SESSION["username"]) {
   <meta name="description" content="">
   <meta name="author" content="templatemo">
   <!--favicon-->
-  <link rel="shortcut icon" href="favicon.ico" type="image/icon">
-  <link rel="icon" href="favicon.ico" type="image/icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/icon">
+  <link rel="icon" href="images/favicon.ico" type="image/icon">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">

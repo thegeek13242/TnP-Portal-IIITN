@@ -61,22 +61,28 @@
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="bottom-nav">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a class="page-scroll" href="../SProfile/index.php">Student Login</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="../HODProfile/index.php">HOD Login</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="../PProfile/index.php">Placement Login</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="../PriProfile/index.php">Administrative Login</a>
-          </li>
-        </ul>
-      </div>
+      <?php
+      session_start();
+      if (isset($_SESSION['husername']) || isset($_SESSION['username']) || isset($_SESSION['pusername']) || isset($_SESSION['priusername'])) {
+        
+      } else {
+        echo '
+        <div class="bottom-nav">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a class="page-scroll" href="../SProfile/index.php">Student Login</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="../HODProfile/index.php">HOD Login</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="../PProfile/index.php">Placement Login</a>
+            </li>
+          </ul>
+        </div>
+        ';
+      }
+      ?>
       <!-- /.navbar-collapse -->
     </div>
     <!-- /.container-fluid -->

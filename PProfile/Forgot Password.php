@@ -90,9 +90,6 @@
 						<li>
 							<a href="../HODProfile/login.php">HOD Login</a>
 						</li>
-						<li>
-							<a href="../PriProfile/login.php">Administrative Login</a>
-						</li>
 					</ul>
 				</div>
 				<div class="col-md-3 ftr_navi ftr">
