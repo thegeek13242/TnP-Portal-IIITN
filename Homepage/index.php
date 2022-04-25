@@ -92,7 +92,7 @@
       <div class="header-content-inner">
         <script src="/TnP-Portal-IIITN/particles.js-master/particles.js"></script>
         <script src="/TnP-Portal-IIITN/particles.js-master/demo/js/app.js"></script>
-        <h1>Placement Management System</h1>
+        <h1 style="padding-top: 10%;">Placement Management System</h1>
         <hr>
         <a href="../Drives/index.php" class="btn btn-primary btn-xl page-scroll">Placement Statistics</a>
       </div>

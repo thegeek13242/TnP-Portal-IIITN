@@ -139,7 +139,7 @@ if ($_SESSION["username"]) {
 
                 <div class="media-body">
                   <a href='../Drives/index.php'><h2 style="color:black" class="media-heading text-uppercase">Latest Drive</h2></a>
-                  <p>Click on and get the Latest Drive and Upcomming Drive Details</p>
+                  <p>Click on and get the Latest Drive and Upcoming Drive Details</p>
                 </div>
               </div>
             </div>

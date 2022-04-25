@@ -142,7 +142,7 @@ if (isset($_SESSION['husername'])) {
               <a href="../Drives/index.php">
                 <h2 class="media-heading text-uppercase">Upcoming Events</h2>
               </a>
-                <p>Get the Latest Upcomming Events in Our Campus and Fasten ur Seat bealts to host them</p>
+                <p>Get the Latest Upcoming Events in Our Campus and Fasten ur Seat bealts to host them</p>
               </div>
             </div>
           </div>

@@ -89,11 +89,11 @@
 	<div class="products-top">
 		<!-- container -->
 		<div class="container">
-			<h3 class="wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">On Going and Upcomming Drives</h3>
+			<h3 class="wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">Placement Drives</h3>
 			<h5 class="wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">Cras porttitor imperdiet volutpat nulla malesuada lectus eros
 				<span>ut convallis felis consectetur ut</span>
 			</h5>
-			<div class="products-top-grids wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+			<!-- <div class="products-top-grids wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 				<div class="col-md-4 products-grid">
 					<div class="products-number">
 						<p>1.</p>
@@ -168,7 +168,94 @@
 					<div class="clearfix"></div>
 				</div>
 				<div class="clearfix"></div>
-			</div>
+			</div> -->
+			<div class="panel panel-default table-responsive">
+                <table class="table table-striped table-bordered templatemo-user-table">
+				<thead>
+                  <tr>
+                    <td><a  class="white-text templatemo-sort-by">Company Name </a></td>
+                    <td><a  class="white-text templatemo-sort-by">Date </a></td>
+                    <td><a  class="white-text templatemo-sort-by">C/P</a></td>
+                    <td><a  class="white-text templatemo-sort-by">PVenue</a></td>
+					   <td><a  class="white-text templatemo-sort-by">SSLC</a></td>
+<td><a  class="white-text templatemo-sort-by">PU/Dip </a></td>
+   <td><a  class="white-text templatemo-sort-by">BE</a></td>               
+   <td><a  class="white-text templatemo-sort-by">Backlogs</a></td>
+   <td><a  class="white-text templatemo-sort-by">History of Backlogs</a></td>
+			      <td><a  class="white-text templatemo-sort-by">Deatin years</a></td>
+			      <td><a class="white-text templatemo-sort-by">Others details </a></td>
+				  </thead>
+			   </tr>
+			   <?php
+
+          $num_rec_per_page = 15;
+          $connect = mysqli_connect("localhost", "root", "", "details");
+
+          if (isset($_GET["page"])) {
+            $page  = $_GET["page"];
+          } else {
+            $page = 1;
+          };
+          $start_from = ($page - 1) * $num_rec_per_page;
+          $sql = "SELECT * FROM addpdrive ORDER BY Date Desc LIMIT $start_from, $num_rec_per_page";
+          $result = mysqli_query($connect, $sql); //run the query
+          ?>
+          <?php
+          while ($row = mysqli_fetch_array($result)) {
+
+            print "<tr>";
+
+            print "<td>" . $row['CompanyName'] . "</td>";
+            print "<td>" . $row['Date'] . "</td>";
+            print "<td>" . $row['C/P'] . "</td>";
+            print "<td>" . $row['PVenue'] . "</td>";
+            print "<td>" . $row['SSLC'] . "</td>";
+            print "<td>" . $row['PU/Dip'] . "</td>";
+            print "<td>" . $row['BE'] . "</td>";
+            print "<td>" . $row['Backlogs'] . "</td>";
+            print "<td>" . $row['HofBacklogs'] . "</td>";
+            print "<td>" . $row['DetainYears'] . "</td>";
+            print "<td>" . $row['ODetails'] . "</td>";
+
+            print "</tr>";
+          }
+          ?> 
+                    </tbody>
+                </table>
+            </div>
+			<h3 class="wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">Top Placed Students</h3>
+			<h5 class="wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">Cras porttitor imperdiet volutpat nulla malesuada lectus eros
+				<span>ut convallis felis consectetur ut</span>
+				<div class="panel panel-default table-responsive">
+                <table class="table table-striped table-bordered templatemo-user-table">
+				<thead>
+                        <tr>
+                          <td><a class="white-text templatemo-sort-by">Name</a></td>
+                          <td><a class="white-text templatemo-sort-by">Branch</a></td>
+                          <td><a class="white-text templatemo-sort-by">Batch</a></td>
+                          <td><a class="white-text templatemo-sort-by">Company</a></td>
+                          <td><a class="white-text templatemo-sort-by">CTC</a> </td>
+                      </thead>
+                      </tr>
+                      <div class="table-responsive">
+                        <table class="table table-striped table-bordered">
+                          <?php
+                          $connect = mysqli_connect('localhost', 'root', '', 'placement');
+                          //select rows of students with top 5 salaries
+                          $sql = $connect->query("SELECT * FROM presult ORDER BY cast(lpa as int) DESC LIMIT 5");
+                          while ($row = $sql->fetch_assoc()) {
+                            print "<tr>";
+                            echo '<td>' . $row['name'] . '</td>';
+                            echo '<td>' . $row['branch'] . '</td>';
+                            echo '<td>' . $row['year'] . '</td>';
+                            echo '<td>' . $row['company'] . '</td>';
+                            echo '<td>' . $row['lpa'] . '</td>';
+                            print "</tr>";
+                          }
+                          ?>
+                    </tbody>
+                </table>
+            </div>
 		</div>
 		<!-- container -->
 	</div>
